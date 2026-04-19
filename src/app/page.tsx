@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Manifesto from "@/components/Manifesto";
+import About from "@/components/About";
 import Cases from "@/components/Cases";
 import Audit from "@/components/Audit";
 
@@ -9,6 +10,7 @@ export default function Home() {
     <main className="relative bg-surface">
       <Navbar />
       <Hero />
+      <About />
       <Manifesto />
       <Cases />
       <Audit />
