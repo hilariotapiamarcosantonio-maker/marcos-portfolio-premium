@@ -1,26 +1,31 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-surface: #0e0e0e;
+  --color-surface-container-low: #131313;
+  --color-surface-container-high: #1f1f1f;
+  --color-primary: #e0c29f;
+  --color-on-primary: #513c23;
+  --color-secondary: #a39d93;
+  --color-tertiary: #fafaf5;
+  --color-outline: #757575;
+  --color-outline-variant: #484848;
+
+  --font-headline: var(--font-manrope), sans-serif;
+  --font-body: var(--font-jakarta), sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  body {
+    background-color: var(--color-surface);
+    color: var(--color-on-surface, #e5e5e5);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer utilities {
+  .bronze-glow { background: radial-gradient(circle at center, #e0c29f 0%, #584329 100%); }
+  .text-kern-widest { letter-spacing: 0.25em; }
 }
