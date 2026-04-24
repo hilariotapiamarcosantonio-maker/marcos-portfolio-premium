@@ -28,12 +28,14 @@ export default function Navbar() {
         className={`content-shell flex items-center justify-between transition-[padding] duration-300 ${
           scrolled ? "py-3 md:py-3" : "py-4 md:py-[1.1rem]"
         }`}
+        style={{ overflow: "hidden" }}
       >
         <a
           href="#top"
-          className="font-headline text-xs font-extrabold uppercase tracking-[0.32em] text-tertiary transition-colors hover:text-primary md:text-sm"
+          className="shrink-0 whitespace-nowrap font-headline text-[10px] font-extrabold uppercase tracking-[0.22em] text-tertiary transition-colors hover:text-primary sm:tracking-[0.28em] md:text-sm md:tracking-[0.32em]"
         >
-          Marcos Hilario
+          <span className="sm:hidden">M. Hilario</span>
+          <span className="hidden sm:inline">Marcos Hilario</span>
         </a>
 
         <div className="hidden items-center gap-7 lg:flex">
@@ -50,13 +52,14 @@ export default function Navbar() {
 
         <a
           href="#audit"
-          className={`bronze-glow rounded-full font-bold uppercase text-on-primary shadow-[0_12px_40px_rgba(224,194,159,0.16)] transition-[transform,padding,letter-spacing,font-size] duration-300 hover:-translate-y-0.5 ${
+          className={`bronze-glow shrink-0 rounded-full font-bold uppercase text-on-primary shadow-[0_12px_40px_rgba(224,194,159,0.16)] transition-[transform,padding,letter-spacing,font-size] duration-300 hover:-translate-y-0.5 ${
             scrolled
               ? "px-3 py-2.5 text-[8.5px] tracking-[0.16em] sm:px-3.5 md:px-4 md:text-[9.5px] md:tracking-[0.2em]"
               : "px-3.5 py-3 text-[9px] tracking-[0.18em] sm:px-4 md:px-5 md:text-[10px] md:tracking-[0.24em]"
           }`}
         >
-          {ctaLabels.navbar}
+          <span className="sm:hidden">Auditoría</span>
+          <span className="hidden sm:inline">{ctaLabels.navbar}</span>
         </a>
       </div>
     </nav>

@@ -24,6 +24,7 @@
 
   body {
     min-height: 100vh;
+    overflow-x: hidden;
     background-color: var(--color-surface);
     color: var(--color-on-background);
     font-family: var(--font-body);
@@ -49,7 +50,7 @@
   }
 
   .content-shell {
-    width: min(100% - 1.5rem, 1360px);
+    width: min(100% - 1rem, 1360px);
     margin-inline: auto;
   }
 
@@ -74,6 +75,12 @@
 
   .text-kern-widest {
     letter-spacing: 0.25em;
+  }
+
+  @media (min-width: 480px) {
+    .content-shell {
+      width: min(100% - 1.5rem, 1360px);
+    }
   }
 
   @media (min-width: 768px) {

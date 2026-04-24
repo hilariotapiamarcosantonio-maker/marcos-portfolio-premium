@@ -22,7 +22,7 @@ export default function Hero() {
   return (
     <section
       id="top"
-      className="relative scroll-mt-24 overflow-hidden pb-14 pt-24 md:pb-16 md:pt-28 lg:pb-10 lg:pt-24 xl:pb-12 xl:pt-[6.75rem]"
+      className="relative scroll-mt-24 overflow-hidden pb-10 pt-20 sm:pb-12 sm:pt-24 md:pb-16 md:pt-28 lg:pb-10 lg:pt-24 xl:pb-12 xl:pt-[6.75rem]"
     >
       <div
         aria-hidden="true"
@@ -40,29 +40,29 @@ export default function Hero() {
               Arquitectura digital premium
             </span>
 
-            <h1 className="mt-5 max-w-[calc(100vw-1.5rem)] break-words font-headline text-[clamp(2rem,8.1vw,2.55rem)] font-extrabold leading-[1.04] tracking-normal text-tertiary sm:max-w-[23ch] lg:max-w-[800px] lg:text-[clamp(2.85rem,3.35vw,3.4rem)]">
+            <h1 className="mt-4 max-w-[calc(100vw-1.5rem)] break-words font-headline text-[clamp(1.65rem,6.8vw,2.2rem)] font-extrabold leading-[1.08] tracking-normal text-tertiary sm:text-[clamp(2rem,7.2vw,2.55rem)] sm:leading-[1.04] sm:max-w-[23ch] lg:max-w-[800px] lg:text-[clamp(2.85rem,3.35vw,3.4rem)]">
               <span className="block">No construyo páginas web.</span>
               <span className="mt-2 block">
                 Construyo infraestructura digital para vender con autoridad.
               </span>
             </h1>
 
-            <p className="mt-5 max-w-[calc(100vw-1.5rem)] text-[0.98rem] leading-7 text-secondary sm:max-w-[44rem] md:text-[1.04rem]">
+            <p className="mt-4 max-w-[calc(100vw-1.5rem)] text-[0.95rem] leading-6 text-secondary sm:max-w-[44rem] sm:text-[0.98rem] sm:leading-7 md:text-[1.04rem]">
               Diseño ecosistemas comerciales con web premium, CRM,
               automatización, dashboards y seguimiento para negocios que
               necesitan captar, organizar y convertir mejor sus oportunidades.
             </p>
 
-            <div className="mt-7 flex flex-col gap-3.5 sm:flex-row">
+            <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:gap-3.5">
               <a
                 href="#audit"
-                className="bronze-glow inline-flex w-full max-w-full items-center justify-center rounded-full px-4 py-3.5 text-center text-[10px] font-extrabold uppercase tracking-[0.16em] text-on-primary shadow-[0_18px_40px_rgba(224,194,159,0.18)] transition-transform hover:-translate-y-0.5 sm:w-auto sm:px-6 sm:text-[11px] sm:tracking-[0.24em]"
+                className="bronze-glow inline-flex w-full items-center justify-center rounded-full px-5 py-4 text-center text-[10.5px] font-extrabold uppercase tracking-[0.16em] text-on-primary shadow-[0_18px_40px_rgba(224,194,159,0.18)] transition-transform hover:-translate-y-0.5 sm:w-auto sm:px-6 sm:text-[11px] sm:tracking-[0.24em]"
               >
                 {ctaLabels.primary}
               </a>
               <a
                 href="#cases"
-                className="inline-flex w-full max-w-full items-center justify-center rounded-full border border-outline-variant/28 px-4 py-3.5 text-center text-[10px] font-bold uppercase tracking-[0.16em] text-tertiary transition-[transform,border-color,color,box-shadow] duration-300 hover:-translate-y-0.5 hover:border-primary/40 hover:text-primary hover:shadow-[0_18px_40px_rgba(0,0,0,0.18)] sm:w-auto sm:px-6 sm:text-[11px] sm:tracking-[0.22em]"
+                className="inline-flex w-full items-center justify-center rounded-full border border-outline-variant/28 px-5 py-4 text-center text-[10.5px] font-bold uppercase tracking-[0.16em] text-tertiary transition-[transform,border-color,color,box-shadow] duration-300 hover:-translate-y-0.5 hover:border-primary/40 hover:text-primary hover:shadow-[0_18px_40px_rgba(0,0,0,0.18)] sm:w-auto sm:px-6 sm:text-[11px] sm:tracking-[0.22em]"
               >
                 {ctaLabels.secondary}
               </a>
