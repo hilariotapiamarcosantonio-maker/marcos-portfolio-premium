@@ -4,7 +4,7 @@ import { caseStudies, ctaLabels } from "@/content/site";
 
 export default function Cases() {
   return (
-    <section id="cases" className="relative scroll-mt-24 py-24 md:py-28">
+    <section id="cases" className="relative scroll-mt-24 py-20 md:py-24 lg:py-26">
       <div
         aria-hidden="true"
         className="section-divider absolute inset-x-0 top-0 h-px"
@@ -15,13 +15,16 @@ export default function Cases() {
           eyebrow="Evidencia"
           title="Casos estructurados como sistemas de negocio, no como una galería."
           description="Cada proyecto se presenta como contexto comercial, sistema construido y valor operativo. La evidencia visual acompaña la lectura estratégica con capturas reales de activos digitales en producción."
+          align="center"
+          compact
+          className="max-w-[54rem]"
         />
 
-        <div className="mt-14 grid gap-7 xl:grid-cols-2">
+        <div className="mt-10 grid gap-6 xl:grid-cols-2">
           {caseStudies.map((study) => (
             <article
               key={study.name}
-              className={`panel-premium relative overflow-hidden rounded-[32px] border p-5 transition-[transform,border-color,box-shadow] duration-500 hover:-translate-y-1 md:p-6 xl:p-7 ${
+              className={`panel-premium relative overflow-hidden rounded-[30px] border p-5 transition-[transform,border-color,box-shadow] duration-500 hover:-translate-y-1 md:p-6 xl:p-6 ${
                 study.featured
                   ? "border-primary/28 bg-[linear-gradient(180deg,rgba(224,194,159,0.08),rgba(17,17,17,0.92))]"
                   : "border-outline-variant/14 bg-surface-container-low/88"
@@ -41,12 +44,12 @@ export default function Cases() {
                 featured={study.featured}
               />
 
-              <div className="mt-6 flex flex-col gap-3 border-b border-outline-variant/12 pb-5 md:flex-row md:items-end md:justify-between">
+              <div className="mt-5 flex flex-col gap-3 border-b border-outline-variant/12 pb-5 md:flex-row md:items-end md:justify-between">
                 <div>
                   <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-primary">
                     {study.sector}
                   </p>
-                  <h3 className="mt-2 font-headline text-[1.55rem] font-bold leading-[1.06] text-tertiary md:text-[1.9rem]">
+                  <h3 className="mt-2 font-headline text-[1.45rem] font-bold leading-[1.07] text-tertiary md:text-[1.72rem]">
                     {study.name}
                   </h3>
                 </div>
@@ -57,7 +60,7 @@ export default function Cases() {
                 </span>
               </div>
 
-              <div className="mt-6 grid gap-4">
+              <div className="mt-5 grid gap-3.5">
                 <div className="rounded-[22px] border border-outline-variant/12 bg-black/10 p-4">
                   <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-outline">
                     Problema
@@ -89,7 +92,7 @@ export default function Cases() {
           ))}
         </div>
 
-        <div className="mt-10 flex justify-center">
+        <div className="mt-8 flex justify-center">
           <a
             href="#audit"
             className="inline-flex items-center justify-center rounded-full border border-outline-variant/20 px-6 py-3.5 text-[11px] font-extrabold uppercase tracking-[0.22em] text-tertiary transition-[transform,border-color,color,box-shadow] duration-300 hover:-translate-y-0.5 hover:border-primary/35 hover:text-primary hover:shadow-[0_18px_40px_rgba(0,0,0,0.18)]"
