@@ -126,8 +126,9 @@ export const caseStudies = [
       "Más control sobre oportunidades en curso, mejor capacidad para responder con autoridad y una presencia que ayuda a vender confianza antes de la llamada.",
     mockupLabel: "Landing + pipeline",
     mockupNote:
-      "Espacio preparado para insertar la captura real de la landing, el formulario de captación o la vista del CRM del proyecto.",
+      "Captura real de la landing comercial y del frente visual del sistema industrial.",
     mockupChips: ["Captación", "Cotización", "Pipeline"],
+    image: "/projects/inox-minier.jpg",
     featured: true,
   },
   {
@@ -141,8 +142,9 @@ export const caseStudies = [
       "Menos fricción al cotizar, mejor filtro de clientes y un proceso más sólido para defender proyectos de mayor valor.",
     mockupLabel: "Briefing + tablero",
     mockupNote:
-      "Espacio reservado para la captura real de la web, el flujo de briefing o el tablero de priorización comercial.",
+      "Captura real del frente comercial diseñado para ordenar servicios y solicitudes.",
     mockupChips: ["Briefing", "Servicios", "Prioridad"],
+    image: "/projects/depot-graphics.jpg",
   },
   {
     name: "Vista del Río",
@@ -155,8 +157,9 @@ export const caseStudies = [
       "Seguimiento menos manual, conversaciones mejor ordenadas y mayor capacidad para convertir interés en reuniones o próximos pasos concretos.",
     mockupLabel: "Captación + nurturing",
     mockupNote:
-      "Listo para mostrar la captura real de la landing, la secuencia de seguimiento o la interfaz del CRM.",
+      "Captura real del activo visual usado para sostener percepción premium y seguimiento comercial.",
     mockupChips: ["Interés", "Seguimiento", "Decisión"],
+    image: "/projects/vista-del-rio.jpg",
   },
   {
     name: "Kalon / Santuario Estética",
@@ -169,8 +172,9 @@ export const caseStudies = [
       "Mayor consistencia en la percepción premium, trazabilidad del prospecto y mejor control sobre conversión y reactivación.",
     mockupLabel: "Web premium + reactivación",
     mockupNote:
-      "Reservado para capturas reales de la experiencia visual, las páginas de servicio o los flujos de reactivación.",
+      "Captura real del frente visual del proyecto en una experiencia estética de alto valor.",
     mockupChips: ["Tratamientos", "CRM", "Reactivación"],
+    image: "/projects/kalon-santuario.jpg",
     featured: true,
   },
   {
@@ -184,8 +188,9 @@ export const caseStudies = [
       "Menos caos en la gestión diaria, respuestas más rápidas y una experiencia que permite vender con orden aun cuando aumenta la demanda.",
     mockupLabel: "Catálogo + operación",
     mockupNote:
-      "Preparado para mockups reales de catálogo, flujo de pedidos o panel operativo del negocio.",
+      "Captura real del catálogo y la identidad visual usada para pedidos y presentación del negocio.",
     mockupChips: ["Pedidos", "Confirmación", "Operación"],
+    image: "/projects/gelatinas-postres.jpg",
   },
   {
     name: "Capital en Orden",
@@ -198,8 +203,9 @@ export const caseStudies = [
       "Más autoridad percibida, conversaciones mejor calificadas y un proceso alineado con servicios consultivos de alto valor.",
     mockupLabel: "Autoridad + diagnóstico",
     mockupNote:
-      "Espacio listo para las capturas reales de la landing consultiva, la secuencia de diagnóstico o el panel comercial.",
+      "Captura real del frente editorial y comercial del sistema consultivo.",
     mockupChips: ["Autoridad", "Diagnóstico", "Seguimiento"],
+    image: "/projects/capital-en-orden.jpg",
   },
 ];
 

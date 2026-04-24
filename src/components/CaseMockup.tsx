@@ -1,8 +1,11 @@
+import Image from "next/image";
+
 type CaseMockupProps = {
   project: string;
   label: string;
   note: string;
   chips: string[];
+  image?: string;
   featured?: boolean;
 };
 
@@ -11,8 +14,11 @@ export default function CaseMockup({
   label,
   note,
   chips,
+  image,
   featured = false,
 }: CaseMockupProps) {
+  const imageAlt = `Captura real del sistema digital de ${project}, mostrando ${label.toLowerCase()}.`;
+
   return (
     <div className="group relative isolate [perspective:1800px]">
       <div
@@ -73,29 +79,53 @@ export default function CaseMockup({
                     </span>
                   </div>
 
-                  <div className="flex h-[calc(100%-53px)] flex-col justify-between p-5">
-                    <div>
-                      <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-primary">
-                        Screenshot real preparado
-                      </p>
-                      <h4 className="mt-3 max-w-md font-headline text-2xl font-bold text-tertiary md:text-[2rem]">
-                        {project}
-                      </h4>
-                      <p className="mt-4 text-sm leading-7 text-secondary">
-                        {note}
-                      </p>
+                  {image ? (
+                    <div className="relative h-[calc(100%-53px)] overflow-hidden">
+                      <Image
+                        src={image}
+                        alt={imageAlt}
+                        fill
+                        sizes="(max-width: 767px) 100vw, 55vw"
+                        className="object-cover object-top transition-transform duration-700 group-hover:scale-[1.02]"
+                      />
+                      <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(10,10,10,0.04)_0%,rgba(10,10,10,0.1)_35%,rgba(10,10,10,0.82)_100%)]" />
+                      <div className="absolute left-4 top-4 inline-flex rounded-full border border-primary/16 bg-black/35 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-primary backdrop-blur">
+                        Evidencia real
+                      </div>
+                      <div className="absolute inset-x-4 bottom-4 rounded-[18px] border border-white/10 bg-black/38 p-4 backdrop-blur-md">
+                        <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-outline">
+                          Activo capturado
+                        </p>
+                        <p className="mt-3 text-sm leading-7 text-tertiary/88">
+                          {note}
+                        </p>
+                      </div>
                     </div>
+                  ) : (
+                    <div className="flex h-[calc(100%-53px)] flex-col justify-between p-5">
+                      <div>
+                        <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-primary">
+                          Screenshot real preparado
+                        </p>
+                        <h4 className="mt-3 max-w-md font-headline text-2xl font-bold text-tertiary md:text-[2rem]">
+                          {project}
+                        </h4>
+                        <p className="mt-4 text-sm leading-7 text-secondary">
+                          {note}
+                        </p>
+                      </div>
 
-                    <div className="rounded-[18px] border border-dashed border-primary/24 bg-black/15 p-4">
-                      <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-outline">
-                        Inserción sugerida
-                      </p>
-                      <p className="mt-3 text-sm leading-7 text-secondary">
-                        Landing, CRM o dashboard del activo con mayor peso
-                        comercial dentro del caso.
-                      </p>
+                      <div className="rounded-[18px] border border-dashed border-primary/24 bg-black/15 p-4">
+                        <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-outline">
+                          Inserción sugerida
+                        </p>
+                        <p className="mt-3 text-sm leading-7 text-secondary">
+                          Landing, CRM o dashboard del activo con mayor peso
+                          comercial dentro del caso.
+                        </p>
+                      </div>
                     </div>
-                  </div>
+                  )}
                 </div>
 
                 <div className="grid gap-4">
@@ -122,15 +152,15 @@ export default function CaseMockup({
                     <ul className="mt-4 space-y-3 text-sm leading-7 text-secondary">
                       <li className="flex gap-3">
                         <span className="mt-2 h-1.5 w-1.5 rounded-full bg-primary" />
-                        <span>El mockup se reserva para evidencia real del sistema.</span>
+                        <span>La vista se integra como evidencia del sistema.</span>
                       </li>
                       <li className="flex gap-3">
                         <span className="mt-2 h-1.5 w-1.5 rounded-full bg-primary" />
-                        <span>La pantalla principal debe mostrar contexto comercial.</span>
+                        <span>El mockup mantiene foco comercial y jerarquía visual.</span>
                       </li>
                       <li className="flex gap-3">
                         <span className="mt-2 h-1.5 w-1.5 rounded-full bg-primary" />
-                        <span>La vista acompaña al caso; no compite con él.</span>
+                        <span>La captura acompaña el caso; no compite con él.</span>
                       </li>
                     </ul>
                   </div>

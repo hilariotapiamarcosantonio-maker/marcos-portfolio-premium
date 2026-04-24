@@ -37,6 +37,7 @@ export default function Cases() {
                 label={study.mockupLabel}
                 note={study.mockupNote}
                 chips={study.mockupChips}
+                image={study.image}
                 featured={study.featured}
               />
 
