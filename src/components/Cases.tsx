@@ -14,7 +14,7 @@ export default function Cases() {
         <SectionHeading
           eyebrow="Evidencia"
           title="Casos estructurados como sistemas de negocio, no como una galería."
-          description="Cada proyecto se presenta como contexto comercial, sistema construido y valor operativo. El mockup no busca decorar: prepara el espacio para capturas reales de landing, CRM o dashboard."
+          description="Cada proyecto se presenta como contexto comercial, sistema construido y valor operativo. La evidencia visual acompaña la lectura estratégica con capturas reales de activos digitales en producción."
         />
 
         <div className="mt-16 grid gap-8 xl:grid-cols-2">

@@ -72,7 +72,7 @@ export default function CaseMockup({
                 <div className="overflow-hidden rounded-[22px] border border-white/8 bg-[linear-gradient(180deg,rgba(255,255,255,0.045),rgba(255,255,255,0.015))]">
                   <div className="flex items-center justify-between border-b border-white/8 px-4 py-3">
                     <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-outline">
-                      Captura principal
+                      Vista del sistema
                     </p>
                     <span className="rounded-full border border-white/8 bg-black/20 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-secondary">
                       Laptop / browser
@@ -90,11 +90,11 @@ export default function CaseMockup({
                       />
                       <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(10,10,10,0.04)_0%,rgba(10,10,10,0.1)_35%,rgba(10,10,10,0.82)_100%)]" />
                       <div className="absolute left-4 top-4 inline-flex rounded-full border border-primary/16 bg-black/35 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-primary backdrop-blur">
-                        Evidencia real
+                        Activo digital en producción
                       </div>
                       <div className="absolute inset-x-4 bottom-4 rounded-[18px] border border-white/10 bg-black/38 p-4 backdrop-blur-md">
                         <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-outline">
-                          Activo capturado
+                          Infraestructura comercial aplicada
                         </p>
                         <p className="mt-3 text-sm leading-7 text-tertiary/88">
                           {note}
@@ -105,7 +105,7 @@ export default function CaseMockup({
                     <div className="flex h-[calc(100%-53px)] flex-col justify-between p-5">
                       <div>
                         <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-primary">
-                          Screenshot real preparado
+                          Caso visual
                         </p>
                         <h4 className="mt-3 max-w-md font-headline text-2xl font-bold text-tertiary md:text-[2rem]">
                           {project}
@@ -117,11 +117,12 @@ export default function CaseMockup({
 
                       <div className="rounded-[18px] border border-dashed border-primary/24 bg-black/15 p-4">
                         <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-outline">
-                          Inserción sugerida
+                          Vista del sistema
                         </p>
                         <p className="mt-3 text-sm leading-7 text-secondary">
-                          Landing, CRM o dashboard del activo con mayor peso
-                          comercial dentro del caso.
+                          La captura principal se integra aquí para reforzar la
+                          lectura comercial del activo más relevante dentro del
+                          caso.
                         </p>
                       </div>
                     </div>
@@ -152,15 +153,23 @@ export default function CaseMockup({
                     <ul className="mt-4 space-y-3 text-sm leading-7 text-secondary">
                       <li className="flex gap-3">
                         <span className="mt-2 h-1.5 w-1.5 rounded-full bg-primary" />
-                        <span>La vista se integra como evidencia del sistema.</span>
+                        <span>
+                          La vista se integra como evidencia operativa del
+                          sistema.
+                        </span>
                       </li>
                       <li className="flex gap-3">
                         <span className="mt-2 h-1.5 w-1.5 rounded-full bg-primary" />
-                        <span>El mockup mantiene foco comercial y jerarquía visual.</span>
+                        <span>
+                          La estructura mantiene foco comercial y jerarquía
+                          visual.
+                        </span>
                       </li>
                       <li className="flex gap-3">
                         <span className="mt-2 h-1.5 w-1.5 rounded-full bg-primary" />
-                        <span>La captura acompaña el caso; no compite con él.</span>
+                        <span>
+                          La captura acompaña la lectura estratégica del caso.
+                        </span>
                       </li>
                     </ul>
                   </div>
