@@ -56,6 +56,17 @@
     mask-image: radial-gradient(circle at center, black 36%, transparent 85%);
   }
 
+  .section-divider {
+    background: linear-gradient(
+      90deg,
+      rgba(224, 194, 159, 0) 0%,
+      rgba(224, 194, 159, 0.18) 18%,
+      rgba(224, 194, 159, 0.42) 50%,
+      rgba(224, 194, 159, 0.18) 82%,
+      rgba(224, 194, 159, 0) 100%
+    );
+  }
+
   .text-kern-widest {
     letter-spacing: 0.25em;
   }

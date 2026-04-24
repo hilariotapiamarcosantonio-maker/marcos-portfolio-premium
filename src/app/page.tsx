@@ -1,6 +1,7 @@
 import About from "@/components/About";
 import Audit from "@/components/Audit";
 import Cases from "@/components/Cases";
+import Credibility from "@/components/Credibility";
 import Hero from "@/components/Hero";
 import Manifesto from "@/components/Manifesto";
 import Navbar from "@/components/Navbar";
@@ -61,6 +62,7 @@ export default function Home() {
 
       <Navbar />
       <Hero />
+      <Credibility />
       <About />
       <Manifesto />
       <Cases />

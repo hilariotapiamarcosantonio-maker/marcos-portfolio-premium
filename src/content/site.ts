@@ -4,8 +4,14 @@ export const navigationLinks = [
   { href: "#system", label: "Sistema" },
   { href: "#cases", label: "Casos" },
   { href: "#offers", label: "Oferta" },
-  { href: "#audit", label: "Auditoría" },
+  { href: "#audit", label: "Evaluación" },
 ];
+
+export const ctaLabels = {
+  primary: "Solicitar Evaluación Estratégica",
+  secondary: "Ver Ecosistemas",
+  tertiary: "Evaluar mi Infraestructura Digital",
+};
 
 export const heroHighlights = [
   "Captación estructurada",
@@ -13,6 +19,12 @@ export const heroHighlights = [
   "Automatización operativa",
   "Dashboards comerciales",
   "Autoridad digital",
+];
+
+export const credibilitySignals = [
+  "Activos construidos",
+  "Sectores trabajados",
+  "Infraestructura web, CRM, automatización y dashboards",
 ];
 
 export const businessModules = [
@@ -46,6 +58,61 @@ export const businessModules = [
   },
 ];
 
+export const credibilityPillars = [
+  {
+    title: "Activos construidos",
+    description:
+      "Piezas concretas para negocios que necesitan presencia premium y una operación comercial más clara.",
+    items: [
+      "Landing pages premium",
+      "Sitios web comerciales",
+      "Formularios y rutas de captación",
+      "Bases CRM y seguimiento",
+      "Dashboards de lectura comercial",
+    ],
+  },
+  {
+    title: "Sectores trabajados",
+    description:
+      "Infraestructura aplicada en contextos distintos, con necesidades reales de autoridad, seguimiento y control.",
+    items: [
+      "Industrial y B2B",
+      "Estética premium",
+      "Consultoría y finanzas",
+      "Producción y branding",
+      "Consumo y pedidos",
+    ],
+  },
+  {
+    title: "Infraestructura web, CRM, automatización y dashboards",
+    description:
+      "Diseñados como un sistema operativo comercial, no como piezas aisladas que se ven bien pero no se hablan entre sí.",
+    items: [
+      "Web comercial",
+      "CRM y pipeline",
+      "Automatización operativa",
+      "Dashboards ejecutivos",
+      "Arquitectura digital integral",
+    ],
+  },
+];
+
+export const needTypes = [
+  "Captación y autoridad digital",
+  "CRM y seguimiento comercial",
+  "Automatización operativa",
+  "Dashboards y control comercial",
+  "Diagnóstico estratégico integral",
+];
+
+export const budgetRanges = [
+  "US$1,500 - US$3,000",
+  "US$3,000 - US$6,000",
+  "US$6,000 - US$10,000",
+  "US$10,000+",
+  "Aún estoy definiendo inversión",
+];
+
 export const caseStudies = [
   {
     name: "Inox Minier",
@@ -58,7 +125,8 @@ export const caseStudies = [
       "Más control sobre oportunidades en curso, mejor capacidad para responder con autoridad y una presencia que ayuda a vender confianza antes de la llamada.",
     mockupLabel: "Landing + pipeline",
     mockupNote:
-      "Espacio listo para hero del proyecto, formulario de captación o vista del seguimiento comercial.",
+      "Espacio preparado para insertar la captura real de la landing, el formulario de captación o la vista del CRM del proyecto.",
+    mockupChips: ["Captación", "Cotización", "Pipeline"],
     featured: true,
   },
   {
@@ -72,7 +140,8 @@ export const caseStudies = [
       "Menos fricción al cotizar, mejor filtro de clientes y un proceso más sólido para defender proyectos de mayor valor.",
     mockupLabel: "Briefing + tablero",
     mockupNote:
-      "Reservado para mockup de la web, flujo de briefing o panel de priorización comercial.",
+      "Espacio reservado para la captura real de la web, el flujo de briefing o el tablero de priorización comercial.",
+    mockupChips: ["Briefing", "Servicios", "Prioridad"],
   },
   {
     name: "Vista del Río",
@@ -85,7 +154,8 @@ export const caseStudies = [
       "Seguimiento menos manual, conversaciones mejor ordenadas y mayor capacidad para convertir interés en reuniones o próximos pasos concretos.",
     mockupLabel: "Captación + nurturing",
     mockupNote:
-      "Espacio preparado para mostrar landing, secuencia de seguimiento o vista del CRM del proyecto.",
+      "Listo para mostrar la captura real de la landing, la secuencia de seguimiento o la interfaz del CRM.",
+    mockupChips: ["Interés", "Seguimiento", "Decisión"],
   },
   {
     name: "Kalon / Santuario Estética",
@@ -98,7 +168,8 @@ export const caseStudies = [
       "Mayor consistencia en la percepción premium, trazabilidad del prospecto y mejor control sobre conversión y reactivación.",
     mockupLabel: "Web premium + reactivación",
     mockupNote:
-      "Área reservada para capturas de la experiencia visual, landing de servicios o automatizaciones de seguimiento.",
+      "Reservado para capturas reales de la experiencia visual, las páginas de servicio o los flujos de reactivación.",
+    mockupChips: ["Tratamientos", "CRM", "Reactivación"],
     featured: true,
   },
   {
@@ -112,7 +183,8 @@ export const caseStudies = [
       "Menos caos en la gestión diaria, respuestas más rápidas y una experiencia que permite vender con orden aun cuando aumenta la demanda.",
     mockupLabel: "Catálogo + operación",
     mockupNote:
-      "Preparado para mockups de catálogo, formulario de pedidos o panel operativo del flujo.",
+      "Preparado para mockups reales de catálogo, flujo de pedidos o panel operativo del negocio.",
+    mockupChips: ["Pedidos", "Confirmación", "Operación"],
   },
   {
     name: "Capital en Orden",
@@ -125,7 +197,8 @@ export const caseStudies = [
       "Más autoridad percibida, conversaciones mejor calificadas y un proceso alineado con servicios consultivos de alto valor.",
     mockupLabel: "Autoridad + diagnóstico",
     mockupNote:
-      "Espacio listo para capturas de landing consultiva, secuencia de diagnóstico o panel comercial.",
+      "Espacio listo para las capturas reales de la landing consultiva, la secuencia de diagnóstico o el panel comercial.",
+    mockupChips: ["Autoridad", "Diagnóstico", "Seguimiento"],
   },
 ];
 
@@ -184,7 +257,7 @@ export const offers = [
 ];
 
 export const auditDeliverables = [
-  "Diagnóstico de captación, mensaje comercial y autoridad digital.",
-  "Revisión de CRM, seguimiento, automatizaciones y puntos ciegos operativos.",
-  "Recomendación del sistema ideal según nivel de negocio, complejidad y objetivo comercial.",
+  "Evaluación de la claridad comercial, la autoridad digital y la ruta de captación actual.",
+  "Lectura de fricciones en CRM, seguimiento, automatización y control operativo.",
+  "Recomendación del sistema más conveniente según necesidad, inversión y nivel de urgencia.",
 ];

@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { navigationLinks } from "@/content/site";
+import { ctaLabels, navigationLinks } from "@/content/site";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -20,7 +20,7 @@ export default function Navbar() {
       aria-label="Navegación principal"
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "border-b border-outline-variant/20 bg-surface/88 backdrop-blur-xl"
+          ? "border-b border-outline-variant/18 bg-surface/80 shadow-[0_18px_50px_rgba(0,0,0,0.18)] backdrop-blur-xl"
           : "bg-transparent"
       }`}
     >
@@ -46,9 +46,10 @@ export default function Navbar() {
 
         <a
           href="#audit"
-          className="rounded-full border border-primary/20 bg-primary px-4 py-3 text-[10px] font-bold uppercase tracking-[0.26em] text-on-primary shadow-[0_12px_40px_rgba(224,194,159,0.18)] transition-transform hover:-translate-y-0.5 md:px-6"
+          className="bronze-glow rounded-full px-3 py-3 text-[9px] font-bold uppercase tracking-[0.18em] text-on-primary shadow-[0_12px_40px_rgba(224,194,159,0.18)] transition-transform hover:-translate-y-0.5 sm:px-4 sm:text-[10px] md:px-6 md:tracking-[0.26em]"
         >
-          Solicitar auditoría
+          <span className="md:hidden">Evaluación Estratégica</span>
+          <span className="hidden md:inline">{ctaLabels.primary}</span>
         </a>
       </div>
     </nav>

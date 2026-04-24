@@ -2,14 +2,12 @@ import { NextResponse } from "next/server";
 
 type AuditPayload = {
   name: string;
-  business: string;
-  email: string;
-  phone: string;
-  offerInterest: string;
-  currentSituation: string;
+  company: string;
+  needType: string;
+  budgetRange: string;
+  contact: string;
+  message: string;
 };
-
-const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 function normalizeText(value: unknown) {
   return typeof value === "string" ? value.trim() : "";
@@ -17,33 +15,49 @@ function normalizeText(value: unknown) {
 
 export async function POST(request: Request) {
   try {
-    const data = (await request.json()) as Partial<Record<keyof AuditPayload, unknown>>;
+    const data = (await request.json()) as Partial<
+      Record<keyof AuditPayload, unknown>
+    >;
 
     const payload: AuditPayload = {
       name: normalizeText(data.name),
-      business: normalizeText(data.business),
-      email: normalizeText(data.email),
-      phone: normalizeText(data.phone),
-      offerInterest: normalizeText(data.offerInterest),
-      currentSituation: normalizeText(data.currentSituation),
+      company: normalizeText(data.company),
+      needType: normalizeText(data.needType),
+      budgetRange: normalizeText(data.budgetRange),
+      contact: normalizeText(data.contact),
+      message: normalizeText(data.message),
     };
 
     if (
       !payload.name ||
-      !payload.business ||
-      !payload.email ||
-      !payload.offerInterest ||
-      !payload.currentSituation
+      !payload.company ||
+      !payload.needType ||
+      !payload.budgetRange ||
+      !payload.contact ||
+      !payload.message
     ) {
       return NextResponse.json(
-        { error: "Completa los campos obligatorios para solicitar la auditoría." },
+        {
+          error:
+            "Completa los campos clave para evaluar el encaje del proyecto.",
+        },
         { status: 400 },
       );
     }
 
-    if (!emailPattern.test(payload.email)) {
+    if (payload.contact.length < 5) {
       return NextResponse.json(
-        { error: "Ingresa un correo válido para continuar." },
+        { error: "Ingresa un WhatsApp o email válido para continuar." },
+        { status: 400 },
+      );
+    }
+
+    if (payload.message.length < 20) {
+      return NextResponse.json(
+        {
+          error:
+            "Describe brevemente el contexto y el objetivo comercial para evaluar el encaje.",
+        },
         { status: 400 },
       );
     }
@@ -68,7 +82,10 @@ export async function POST(request: Request) {
 
       if (!webhookResponse.ok) {
         return NextResponse.json(
-          { error: "No fue posible registrar la solicitud en el webhook configurado." },
+          {
+            error:
+              "No fue posible registrar la solicitud en el webhook configurado.",
+          },
           { status: 502 },
         );
       }
@@ -79,7 +96,7 @@ export async function POST(request: Request) {
     return NextResponse.json(
       {
         message:
-          "Solicitud recibida. Marcos revisará tu infraestructura y responderá con el siguiente paso.",
+          "Aplicación recibida. Si hay encaje estratégico, Marcos responderá con el siguiente paso.",
       },
       { status: 200 },
     );
