@@ -1,46 +1,68 @@
-"use client";
-import { motion } from "framer-motion";
+import SectionHeading from "@/components/SectionHeading";
+
+const executionPoints = [
+  {
+    title: "Capta con intencion",
+    description:
+      "La web deja de ser vitrina y se convierte en entrada seria para prospectos con contexto, necesidad y prioridad.",
+  },
+  {
+    title: "Ordena la conversacion comercial",
+    description:
+      "CRM, calificacion, etapas y seguimiento para no depender de memoria, chats dispersos o urgencias mal gestionadas.",
+  },
+  {
+    title: "Automatiza sin perder criterio",
+    description:
+      "Recordatorios, asignaciones, formularios, respuestas y tareas conectadas para ahorrar tiempo sin deshumanizar la venta.",
+  },
+  {
+    title: "Controla desde un dashboard",
+    description:
+      "Visibilidad sobre oportunidades, cuellos de botella y ritmo comercial para dirigir la operacion con autoridad.",
+  },
+];
 
 export default function About() {
   return (
-    <section id="about" className="py-32 bg-surface-container-lowest">
+    <section id="about" className="scroll-mt-24 py-24 md:py-32">
       <div className="container mx-auto px-6 md:px-12">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-          <motion.div 
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            className="relative aspect-[4/5] bg-surface-container-high overflow-hidden border border-outline-variant/20"
-          >
-            {/* Aquí irá tu foto profesional. Por ahora un placeholder de alta calidad */}
-            <div className="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent z-10"></div>
-            <div className="w-full h-full bg-[url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974')] bg-cover bg-center grayscale contrast-125"></div>
-          </motion.div>
-          
-          <motion.div 
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-          >
-            <span className="text-primary text-[10px] tracking-[0.3em] uppercase block mb-6">El Arquitecto</span>
-            <h2 className="text-4xl md:text-6xl font-headline font-bold text-tertiary mb-8">Marcos Hilario.</h2>
-            <p className="text-secondary text-lg font-light leading-relaxed mb-6">
-              Estratega de negocios y arquitecto de infraestructuras digitales con base en Santo Domingo Este. Mi enfoque no es el diseño decorativo, sino la ingeniería de sistemas soberanos.
-            </p>
-            <p className="text-secondary text-lg font-light leading-relaxed mb-10">
-              Especializado en transformar negocios físicos en ecosistemas automatizados que operan bajo sus propias reglas, eliminando la fricción y escalando la autoridad de marca.
-            </p>
-            <div className="grid grid-cols-2 gap-8 border-t border-outline-variant/10 pt-10">
-              <div>
-                <h4 className="text-tertiary font-bold text-xs uppercase tracking-widest mb-2">Visión</h4>
-                <p className="text-outline text-sm">Soberanía Tecnológica Absoluta.</p>
-              </div>
-              <div>
-                <h4 className="text-tertiary font-bold text-xs uppercase tracking-widest mb-2">Ejecución</h4>
-                <p className="text-outline text-sm">Ingeniería de Alto Rendimiento.</p>
-              </div>
+        <div className="grid gap-12 lg:grid-cols-[0.95fr_1.05fr]">
+          <div className="rounded-[32px] border border-outline-variant/18 bg-surface-container-low/80 p-8 md:p-10">
+            <SectionHeading
+              eyebrow="Direccion estrategica"
+              title="Marcos Hilario diseña el sistema que une autoridad digital con control comercial."
+              description="No entra a decorar presencia digital. Entra a construir la infraestructura que conecta captacion, seguimiento, automatizacion y operacion para negocios que necesitan vender con orden."
+            />
+
+            <div className="mt-8 rounded-[24px] border border-primary/15 bg-primary/6 p-6">
+              <p className="text-sm leading-7 text-secondary md:text-base">
+                Cuando un negocio depende de mensajes sueltos, formularios sin
+                destino, seguimiento manual y una web sin consecuencias, pierde
+                velocidad, claridad y autoridad. La arquitectura correcta corrige
+                eso desde la raiz.
+              </p>
             </div>
-          </motion.div>
+          </div>
+
+          <div className="grid gap-4 sm:grid-cols-2">
+            {executionPoints.map((point) => (
+              <article
+                key={point.title}
+                className="rounded-[28px] border border-outline-variant/14 bg-surface-container-lowest/70 p-6 transition-colors hover:border-primary/30"
+              >
+                <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-primary">
+                  Marcos Hilario
+                </p>
+                <h3 className="mt-4 font-headline text-2xl font-bold text-tertiary">
+                  {point.title}
+                </h3>
+                <p className="mt-4 text-sm leading-7 text-secondary">
+                  {point.description}
+                </p>
+              </article>
+            ))}
+          </div>
         </div>
       </div>
     </section>

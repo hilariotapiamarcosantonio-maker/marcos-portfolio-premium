@@ -1,25 +1,43 @@
-export default function Manifesto() {
-  const pillars = [
-    { title: "Web Premium", icon: "diamond", desc: "Interfaces diseñadas para la conversión ejecutiva." },
-    { title: "Concierge IA", icon: "auto_awesome", desc: "Agentes que cualifican prospectos 24/7." },
-    { title: "Flujos n8n", icon: "hub", desc: "Automatización profunda de infraestructuras." },
-    { title: "Soberanía", icon: "shield", desc: "Propiedad absoluta de tus datos y sistemas." }
-  ];
+import SectionHeading from "@/components/SectionHeading";
+import { businessModules } from "@/content/site";
 
+export default function Manifesto() {
   return (
-    <section id="manifesto" className="py-32 bg-surface-container-low border-y border-outline-variant/10">
-      <div className="container mx-auto px-6 md:px-12 grid lg:grid-cols-2 gap-20">
-        <div>
-          <span className="text-primary text-[10px] tracking-[0.3em] uppercase block mb-4">Filosofía</span>
-          <h2 className="text-4xl md:text-6xl font-headline font-bold text-tertiary mb-8">El Manifiesto de Soberanía Comercial.</h2>
-          <p className="text-secondary text-lg font-light leading-relaxed">No se trata de estar en internet, se trata de poseer el ecosistema donde ocurre la transacción.</p>
-        </div>
-        <div className="grid md:grid-cols-2 gap-4">
-          {pillars.map((p, i) => (
-            <div key={i} className="bg-surface p-8 border border-outline-variant/10 hover:border-primary/30 transition-all group">
-              <h3 className="text-tertiary font-bold uppercase text-xs tracking-widest mb-4 group-hover:text-primary">{p.title}</h3>
-              <p className="text-secondary text-sm font-light">{p.desc}</p>
-            </div>
+    <section
+      id="system"
+      className="scroll-mt-24 border-y border-outline-variant/10 bg-surface-container-low py-24 md:py-32"
+    >
+      <div className="container mx-auto px-6 md:px-12">
+        <SectionHeading
+          eyebrow="Sistema"
+          title="Esto no es una web bonita. Es una infraestructura comercial sobria."
+          description="Cada modulo se construye para mover una consecuencia de negocio: captar mejor, responder mas rapido, seguir con criterio y operar con visibilidad."
+        />
+
+        <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+          {businessModules.map((module) => (
+            <article
+              key={module.title}
+              className="rounded-[30px] border border-outline-variant/12 bg-surface px-6 py-8 transition-all hover:-translate-y-1 hover:border-primary/28"
+            >
+              <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-primary">
+                Modulo
+              </p>
+              <h3 className="mt-4 font-headline text-2xl font-bold text-tertiary">
+                {module.title}
+              </h3>
+              <p className="mt-4 text-sm leading-7 text-secondary">
+                {module.description}
+              </p>
+              <div className="mt-6 border-t border-outline-variant/12 pt-5">
+                <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-outline">
+                  Impacto buscado
+                </p>
+                <p className="mt-3 text-sm leading-7 text-tertiary/85">
+                  {module.outcome}
+                </p>
+              </div>
+            </article>
           ))}
         </div>
       </div>

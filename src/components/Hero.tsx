@@ -1,14 +1,117 @@
+import { heroHighlights } from "@/content/site";
+
+const systemSteps = [
+  {
+    label: "Captacion",
+    value: "Landing premium, formularios y rutas claras para que la demanda entre con criterio.",
+  },
+  {
+    label: "Seguimiento",
+    value: "CRM, estados, alertas y automatizaciones para que ningun prospecto serio se enfrie.",
+  },
+  {
+    label: "Control",
+    value: "Dashboards y visibilidad comercial para decidir con datos y no con intuicion.",
+  },
+];
+
 export default function Hero() {
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072')] bg-cover bg-center opacity-10 grayscale"></div>
-      <div className="container mx-auto px-6 relative z-10 text-center">
-        <h6 className="text-primary text-kern-widest uppercase mb-6 font-bold text-xs">Arquitectura Digital Premium</h6>
-        <h1 className="text-5xl md:text-8xl font-headline font-extrabold text-tertiary leading-tight mb-8 max-w-5xl mx-auto">Soberanía Digital para Marcas de Alto Rendimiento.</h1>
-        <p className="text-secondary text-lg md:text-xl max-w-2xl mx-auto mb-12 font-light">Ecosistemas que eliminan la dependencia externa y optimizan el crecimiento escalable.</p>
-        <div className="flex flex-col md:flex-row gap-6 justify-center">
-          <button className="bg-primary text-on-primary px-10 py-5 font-bold uppercase text-xs bronze-glow shadow-2xl">Iniciar Auditoría</button>
-          <button className="text-tertiary px-10 py-5 font-bold uppercase text-xs border border-outline/30 hover:bg-white/5 transition-all">Ver Ecosistemas</button>
+    <section
+      id="top"
+      className="relative scroll-mt-24 overflow-hidden pb-24 pt-36 md:pb-32 md:pt-44"
+    >
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] [background-size:68px_68px] opacity-20 [mask-image:radial-gradient(circle_at_center,black,transparent_78%)]"
+      />
+
+      <div className="container relative z-10 mx-auto px-6 md:px-12">
+        <div className="grid gap-14 lg:grid-cols-[1.15fr_0.85fr] lg:items-end">
+          <div className="max-w-4xl">
+            <span className="mb-6 inline-flex rounded-full border border-primary/20 bg-primary/8 px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.3em] text-primary">
+              Arquitectura digital premium
+            </span>
+
+            <h1 className="max-w-5xl font-headline text-4xl font-extrabold leading-[1.05] text-tertiary sm:text-5xl md:text-7xl">
+              No construyo paginas web. Diseno infraestructura digital para negocios
+              que necesitan captar clientes, controlar su operacion y escalar con
+              autoridad.
+            </h1>
+
+            <p className="mt-8 max-w-3xl text-base leading-8 text-secondary md:text-xl">
+              Landing premium, CRM, automatizaciones, dashboards y seguimiento
+              comercial conectados en un sistema serio. Menos improvisacion. Mas
+              control sobre demanda, conversion y operacion.
+            </p>
+
+            <div className="mt-8 flex flex-wrap gap-3">
+              {heroHighlights.map((highlight) => (
+                <span
+                  key={highlight}
+                  className="rounded-full border border-outline-variant/30 bg-surface-container-low/70 px-4 py-2 text-xs font-medium text-secondary"
+                >
+                  {highlight}
+                </span>
+              ))}
+            </div>
+
+            <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+              <a
+                href="#audit"
+                className="inline-flex items-center justify-center rounded-full px-7 py-4 text-xs font-extrabold uppercase tracking-[0.25em] text-on-primary shadow-[0_18px_40px_rgba(224,194,159,0.18)] transition-transform hover:-translate-y-0.5 bronze-glow"
+              >
+                Solicitar auditoria estrategica
+              </a>
+              <a
+                href="#cases"
+                className="inline-flex items-center justify-center rounded-full border border-outline-variant/30 px-7 py-4 text-xs font-bold uppercase tracking-[0.24em] text-tertiary transition-colors hover:border-primary/40 hover:text-primary"
+              >
+                Ver casos estrategicos
+              </a>
+            </div>
+
+            <p className="mt-6 max-w-2xl text-sm leading-7 text-outline">
+              Para negocios que venden servicios, proyectos o tickets altos y no
+              pueden seguir operando con leads dispersos, seguimiento manual o una
+              presencia digital sin consecuencia comercial.
+            </p>
+          </div>
+
+          <div className="rounded-[32px] border border-outline-variant/20 bg-surface-container-low/80 p-8 backdrop-blur xl:p-10">
+            <p className="text-[10px] font-semibold uppercase tracking-[0.32em] text-primary">
+              Infraestructura conectada
+            </p>
+
+            <div className="mt-8 space-y-6">
+              {systemSteps.map((step, index) => (
+                <div
+                  key={step.label}
+                  className="flex gap-4 border-b border-outline-variant/12 pb-6 last:border-b-0 last:pb-0"
+                >
+                  <span className="font-headline text-2xl font-bold text-primary/70">
+                    0{index + 1}
+                  </span>
+                  <div>
+                    <h2 className="text-sm font-bold uppercase tracking-[0.24em] text-tertiary">
+                      {step.label}
+                    </h2>
+                    <p className="mt-3 text-sm leading-7 text-secondary">
+                      {step.value}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-8 rounded-[24px] border border-primary/14 bg-primary/6 p-5">
+              <p className="text-sm leading-7 text-secondary">
+                El objetivo no es "verse premium". El objetivo es que la presencia
+                digital sostenga confianza, ordene el pipeline y permita operar con
+                criterio ejecutivo.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

@@ -1,52 +1,71 @@
-"use client";
-import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
 import About from "@/components/About";
-import Manifesto from "@/components/Manifesto";
-import Cases from "@/components/Cases";
 import Audit from "@/components/Audit";
+import Cases from "@/components/Cases";
+import Hero from "@/components/Hero";
+import Manifesto from "@/components/Manifesto";
+import Navbar from "@/components/Navbar";
+import Offers from "@/components/Offers";
+import { siteUrl } from "@/content/site";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  name: "Marcos Hilario",
+  url: siteUrl,
+  description:
+    "Arquitectura digital premium para negocios que necesitan captar clientes, ordenar prospectos, automatizar procesos y operar con autoridad.",
+  areaServed: "Latinoamerica",
+  brand: "Marcos Hilario",
+  knowsAbout: [
+    "Arquitectura digital",
+    "CRM",
+    "Automatizacion comercial",
+    "Dashboards de negocio",
+    "Landing pages de conversion",
+  ],
+  serviceType: [
+    "Auditoria Digital Estrategica",
+    "Sistema Comercial Premium",
+    "Ecosistema Digital Completo",
+  ],
+};
 
 export default function Home() {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    setTimeout(() => setLoading(false), 2000);
-  }, []);
-
   return (
-    <main className="relative bg-surface">
-      <AnimatePresence>
-        {loading && (
-          <motion.div
-            key="loader"
-            exit={{ opacity: 0 }}
-            className="fixed inset-0 z-[100] flex items-center justify-center bg-surface"
-          >
-            <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8, ease: "easeOut" }}
-              className="text-primary font-headline font-bold text-4xl tracking-[0.5em]"
-            >
-              MH
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+    <main className="relative overflow-hidden bg-surface">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(224,194,159,0.14),transparent_30%),radial-gradient(circle_at_bottom_right,rgba(163,157,147,0.1),transparent_24%)]"
+      />
 
       <Navbar />
       <Hero />
       <About />
       <Manifesto />
       <Cases />
+      <Offers />
       <Audit />
-      
-      <footer className="py-20 text-center border-t border-outline-variant/5">
-        <p className="text-outline text-[10px] uppercase tracking-widest">
-          © 2026 Marcos Hilario. Arquitectura Digital de Alto Rendimiento.
-        </p>
+
+      <footer className="border-t border-outline-variant/10 py-10">
+        <div className="container mx-auto flex flex-col gap-4 px-6 text-center md:px-12">
+          <p className="mx-auto max-w-2xl text-sm leading-7 text-secondary">
+            Infraestructura digital para negocios que necesitan vender con control,
+            automatizar con criterio y escalar con una presencia premium.
+          </p>
+          <a
+            href={siteUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="text-[10px] uppercase tracking-[0.35em] text-outline transition-colors hover:text-primary"
+          >
+            © 2026 Marcos Hilario. Arquitectura Digital de Alto Rendimiento.
+          </a>
+        </div>
       </footer>
     </main>
   );

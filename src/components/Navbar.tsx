@@ -1,23 +1,56 @@
 "use client";
-import { useState, useEffect } from "react";
+
+import { useEffect, useState } from "react";
+import { navigationLinks } from "@/content/site";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 50);
-    window.addEventListener("scroll", handleScroll);
+    const handleScroll = () => setScrolled(window.scrollY > 24);
+
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <nav className={`fixed top-0 w-full z-50 flex justify-between items-center px-6 md:px-12 py-6 transition-all duration-500 ${scrolled ? 'bg-surface/90 border-b border-outline-variant/20 backdrop-blur-md' : 'bg-transparent'}`}>
-      <div className="text-xl font-bold tracking-[0.2em] text-tertiary uppercase font-headline">MARCOS HILARIO</div>
-      <div className="hidden md:flex gap-10 items-center uppercase text-[10px] tracking-widest text-secondary font-bold">
-        <a href="#manifesto" className="hover:text-primary transition-colors">Manifesto</a>
-        <a href="#cases" className="hover:text-primary transition-colors">Cases</a>
-        <a href="#audit" className="border-l border-outline-variant/30 pl-10 hover:text-primary transition-colors">Audit</a>
+    <nav
+      aria-label="Navegacion principal"
+      className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
+        scrolled
+          ? "border-b border-outline-variant/20 bg-surface/88 backdrop-blur-xl"
+          : "bg-transparent"
+      }`}
+    >
+      <div className="container mx-auto flex items-center justify-between px-6 py-5 md:px-12">
+        <a
+          href="#top"
+          className="font-headline text-sm font-extrabold uppercase tracking-[0.32em] text-tertiary transition-colors hover:text-primary md:text-base"
+        >
+          Marcos Hilario
+        </a>
+
+        <div className="hidden items-center gap-8 lg:flex">
+          {navigationLinks.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              className="text-[10px] font-semibold uppercase tracking-[0.28em] text-secondary transition-colors hover:text-primary"
+            >
+              {link.label}
+            </a>
+          ))}
+        </div>
+
+        <a
+          href="#audit"
+          className="rounded-full border border-primary/20 bg-primary px-4 py-3 text-[10px] font-bold uppercase tracking-[0.26em] text-on-primary shadow-[0_12px_40px_rgba(224,194,159,0.18)] transition-transform hover:-translate-y-0.5 md:px-6"
+        >
+          Solicitar auditoria
+        </a>
       </div>
-      <button className="bg-primary text-on-primary px-6 py-3 font-bold text-xs hover:scale-105 transition-transform">SOLICITAR AUDITORÍA</button>
     </nav>
   );
 }

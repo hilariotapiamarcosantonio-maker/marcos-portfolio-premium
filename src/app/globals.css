@@ -2,30 +2,47 @@
 
 @theme {
   --color-surface: #0e0e0e;
-  --color-surface-container-low: #131313;
+  --color-surface-container-lowest: #111111;
+  --color-surface-container-low: #151515;
   --color-surface-container-high: #1f1f1f;
   --color-primary: #e0c29f;
-  --color-on-primary: #513c23;
-  --color-secondary: #a39d93;
-  --color-tertiary: #fafaf5;
-  --color-outline: #757575;
-  --color-outline-variant: #484848;
+  --color-on-primary: #2d2010;
+  --color-secondary: #b9b1a6;
+  --color-tertiary: #f7f4ef;
+  --color-outline: #8b857d;
+  --color-outline-variant: #44403c;
+  --color-on-background: #f7f4ef;
 
   --font-headline: var(--font-manrope), sans-serif;
   --font-body: var(--font-jakarta), sans-serif;
 }
 
 @layer base {
-  body {
+  html {
     background-color: var(--color-surface);
-    color: var(--color-on-surface, #e5e5e5);
+  }
+
+  body {
+    min-height: 100vh;
+    background-color: var(--color-surface);
+    color: var(--color-on-background);
     font-family: var(--font-body);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+
+  ::selection {
+    background: rgba(224, 194, 159, 0.24);
+    color: var(--color-tertiary);
+  }
 }
 
 @layer utilities {
-  .bronze-glow { background: radial-gradient(circle at center, #e0c29f 0%, #584329 100%); }
-  .text-kern-widest { letter-spacing: 0.25em; }
+  .bronze-glow {
+    background: linear-gradient(135deg, #f0d9bd 0%, #c79b63 48%, #6d4823 100%);
+  }
+
+  .text-kern-widest {
+    letter-spacing: 0.25em;
+  }
 }
