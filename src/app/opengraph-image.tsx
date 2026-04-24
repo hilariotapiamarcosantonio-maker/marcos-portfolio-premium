@@ -61,8 +61,8 @@ export default function OpenGraphImage() {
               maxWidth: "980px",
             }}
           >
-            Infraestructura digital para captar clientes, organizar ventas y
-            operar con autoridad.
+            Infraestructura digital para vender con autoridad: web, CRM,
+            automatización y dashboards conectados.
           </div>
         </div>
 

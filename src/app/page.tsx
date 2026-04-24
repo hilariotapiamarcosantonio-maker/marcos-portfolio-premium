@@ -16,7 +16,7 @@ const jsonLd = {
   description:
     "Arquitectura digital premium para negocios que necesitan captar clientes, ordenar prospectos, automatizar procesos y operar con autoridad.",
   slogan:
-    "No construyo páginas web. Diseño infraestructura digital para negocios que quieren captar clientes, controlar su operación y escalar con autoridad.",
+    "No construyo páginas web. Construyo infraestructura digital para vender con autoridad.",
   areaServed: ["República Dominicana", "Latinoamérica"],
   brand: "Marcos Hilario",
   inLanguage: "es-DO",

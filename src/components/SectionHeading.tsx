@@ -4,6 +4,7 @@ type SectionHeadingProps = {
   description: string;
   align?: "left" | "center";
   className?: string;
+  compact?: boolean;
 };
 
 export default function SectionHeading({
@@ -12,8 +13,20 @@ export default function SectionHeading({
   description,
   align = "left",
   className = "",
+  compact = false,
 }: SectionHeadingProps) {
   const centered = align === "center";
+  const titleSize = compact
+    ? "text-[clamp(1.85rem,2.75vw,2.6rem)] leading-[1.04] tracking-normal"
+    : "text-[clamp(2rem,3.2vw,3rem)] leading-[1.02] tracking-[-0.03em]";
+  const titleWidth = centered
+    ? compact
+      ? "mx-auto max-w-[23ch]"
+      : "mx-auto max-w-[18ch]"
+    : "max-w-[16ch]";
+  const descriptionSize = compact
+    ? "mt-3 text-[0.95rem] leading-6.5 md:text-[0.98rem]"
+    : "mt-4 text-[0.98rem] leading-7 md:text-[1.04rem]";
 
   return (
     <div
@@ -23,14 +36,14 @@ export default function SectionHeading({
         {eyebrow}
       </p>
       <h2
-        className={`mt-4 font-headline text-[clamp(2rem,3.2vw,3rem)] font-bold leading-[1.02] tracking-[-0.03em] text-tertiary ${
-          centered ? "mx-auto max-w-[18ch]" : "max-w-[16ch]"
+        className={`mt-4 font-headline font-bold text-tertiary ${titleSize} ${
+          titleWidth
         }`}
       >
         {title}
       </h2>
       <p
-        className={`mt-4 max-w-3xl text-[0.98rem] leading-7 text-secondary md:text-[1.04rem] ${
+        className={`max-w-3xl text-secondary ${descriptionSize} ${
           centered ? "mx-auto" : ""
         }`}
       >

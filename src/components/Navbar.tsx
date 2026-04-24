@@ -24,7 +24,11 @@ export default function Navbar() {
           : "bg-transparent"
       }`}
     >
-      <div className="content-shell flex items-center justify-between py-4 md:py-[1.1rem]">
+      <div
+        className={`content-shell flex items-center justify-between transition-[padding] duration-300 ${
+          scrolled ? "py-3 md:py-3" : "py-4 md:py-[1.1rem]"
+        }`}
+      >
         <a
           href="#top"
           className="font-headline text-xs font-extrabold uppercase tracking-[0.32em] text-tertiary transition-colors hover:text-primary md:text-sm"
@@ -46,7 +50,11 @@ export default function Navbar() {
 
         <a
           href="#audit"
-          className="bronze-glow rounded-full px-3.5 py-3 text-[9px] font-bold uppercase tracking-[0.18em] text-on-primary shadow-[0_12px_40px_rgba(224,194,159,0.18)] transition-transform hover:-translate-y-0.5 sm:px-4 md:px-5 md:text-[10px] md:tracking-[0.24em]"
+          className={`bronze-glow rounded-full font-bold uppercase text-on-primary shadow-[0_12px_40px_rgba(224,194,159,0.16)] transition-[transform,padding,letter-spacing,font-size] duration-300 hover:-translate-y-0.5 ${
+            scrolled
+              ? "px-3 py-2.5 text-[8.5px] tracking-[0.16em] sm:px-3.5 md:px-4 md:text-[9.5px] md:tracking-[0.2em]"
+              : "px-3.5 py-3 text-[9px] tracking-[0.18em] sm:px-4 md:px-5 md:text-[10px] md:tracking-[0.24em]"
+          }`}
         >
           {ctaLabels.navbar}
         </a>

@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     template: "%s | Marcos Hilario",
   },
   description:
-    "No construyo páginas web. Diseño infraestructura digital premium para negocios que necesitan captar clientes, controlar prospectos, automatizar procesos y escalar con autoridad.",
+    "No construyo páginas web. Construyo infraestructura digital para vender con autoridad: web premium, CRM, automatización, dashboards y seguimiento comercial.",
   keywords: [
     "arquitectura digital",
     "crm",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     title:
       "Marcos Hilario | Arquitectura Digital Premium para Captación, Ventas y Control Comercial",
     description:
-      "Infraestructura digital premium para captar clientes, ordenar prospectos, automatizar procesos, organizar ventas y operar con autoridad.",
+      "Infraestructura digital premium para vender con autoridad: web, CRM, automatización, dashboards y seguimiento comercial conectados.",
     url: siteUrl,
     siteName: "Marcos Hilario",
     locale: "es_DO",
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     title:
       "Marcos Hilario | Arquitectura Digital Premium para Captación, Ventas y Control Comercial",
     description:
-      "Infraestructura digital premium para negocios que venden servicios, proyectos y tickets altos.",
+      "Infraestructura digital premium para vender con autoridad con web, CRM, automatización y dashboards.",
     images: ["/opengraph-image"],
   },
   robots: {

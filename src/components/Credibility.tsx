@@ -9,7 +9,7 @@ export default function Credibility() {
   return (
     <section
       id="credibility"
-      className="relative scroll-mt-24 border-y border-outline-variant/10 bg-surface-container-low/60 py-24 md:py-28"
+      className="relative scroll-mt-24 border-y border-outline-variant/10 bg-surface-container-low/60 py-16 md:py-18 lg:py-16"
     >
       <div
         aria-hidden="true"
@@ -22,9 +22,10 @@ export default function Credibility() {
           title="Señales de confianza para negocios que compran criterio, no solo diseño."
           description="La credibilidad aquí no se apoya en métricas infladas. Se apoya en el tipo de activos, sectores e infraestructura que ya se pueden mostrar y estructurar con seriedad."
           align="center"
+          compact
         />
 
-        <div className="mt-6 flex flex-wrap justify-center gap-2.5">
+        <div className="mt-5 flex flex-wrap justify-center gap-2.5">
           {credibilitySignals.map((signal) => (
             <span
               key={signal}
@@ -35,11 +36,11 @@ export default function Credibility() {
           ))}
         </div>
 
-        <div className="mt-10 grid gap-5 xl:grid-cols-3">
+        <div className="mt-7 grid gap-4 xl:grid-cols-3">
           {credibilityPillars.map((pillar) => (
             <article
               key={pillar.title}
-              className="panel-premium relative flex h-full flex-col overflow-hidden rounded-[30px] border border-outline-variant/14 bg-surface/92 p-6 transition-[transform,border-color,box-shadow] duration-500 hover:-translate-y-1 hover:border-primary/28"
+              className="panel-premium relative flex h-full flex-col overflow-hidden rounded-[26px] border border-outline-variant/14 bg-surface/92 p-5 transition-[transform,border-color,box-shadow] duration-500 hover:-translate-y-1 hover:border-primary/28 md:p-6"
             >
               <div
                 aria-hidden="true"
@@ -49,15 +50,15 @@ export default function Credibility() {
               <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-primary">
                 Base de confianza
               </p>
-              <h3 className="mt-3 font-headline text-[1.55rem] font-bold leading-[1.06] text-tertiary md:text-[1.7rem]">
+              <h3 className="mt-3 font-headline text-[1.42rem] font-bold leading-[1.08] text-tertiary md:text-[1.52rem]">
                 {pillar.title}
               </h3>
               <p className="mt-3 text-sm leading-6.5 text-secondary">
                 {pillar.description}
               </p>
 
-              <div className="mt-5 border-t border-outline-variant/12 pt-4">
-                <ul className="space-y-2.5 text-[0.95rem] leading-6.5 text-tertiary/88">
+              <div className="mt-4 border-t border-outline-variant/12 pt-4">
+                <ul className="space-y-2.5 text-[0.92rem] leading-6 text-tertiary/88">
                   {pillar.items.map((item) => (
                     <li key={item} className="flex gap-3">
                       <span className="mt-2 h-1.5 w-1.5 rounded-full bg-primary" />
@@ -70,7 +71,7 @@ export default function Credibility() {
           ))}
         </div>
 
-        <div className="panel-premium mt-10 flex flex-col items-center gap-4 rounded-[30px] border border-primary/14 bg-[linear-gradient(180deg,rgba(224,194,159,0.08),rgba(224,194,159,0.04))] px-5 py-7 text-center md:px-8">
+        <div className="panel-premium mt-7 flex flex-col items-center gap-4 rounded-[26px] border border-primary/14 bg-[linear-gradient(180deg,rgba(224,194,159,0.08),rgba(224,194,159,0.04))] px-5 py-6 text-center md:px-8">
           <p className="max-w-3xl text-sm leading-6.5 text-secondary md:text-[0.98rem]">
             La intención no es parecer una agencia más grande. La intención es
             proyectar una práctica seria de arquitectura digital para negocios

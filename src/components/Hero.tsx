@@ -22,7 +22,7 @@ export default function Hero() {
   return (
     <section
       id="top"
-      className="relative scroll-mt-24 overflow-hidden pb-16 pt-24 md:pb-20 md:pt-28 lg:pb-14 lg:pt-24 xl:pb-16 xl:pt-[6.75rem]"
+      className="relative scroll-mt-24 overflow-hidden pb-14 pt-24 md:pb-16 md:pt-28 lg:pb-10 lg:pt-24 xl:pb-12 xl:pt-[6.75rem]"
     >
       <div
         aria-hidden="true"
