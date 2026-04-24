@@ -48,8 +48,7 @@ export default function Navbar() {
           href="#audit"
           className="bronze-glow rounded-full px-3 py-3 text-[9px] font-bold uppercase tracking-[0.18em] text-on-primary shadow-[0_12px_40px_rgba(224,194,159,0.18)] transition-transform hover:-translate-y-0.5 sm:px-4 sm:text-[10px] md:px-6 md:tracking-[0.26em]"
         >
-          <span className="md:hidden">Evaluación Estratégica</span>
-          <span className="hidden md:inline">{ctaLabels.primary}</span>
+          {ctaLabels.navbar}
         </a>
       </div>
     </nav>

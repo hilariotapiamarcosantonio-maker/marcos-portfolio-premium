@@ -39,8 +39,8 @@ export default function About() {
               <p className="text-sm leading-7 text-secondary md:text-base">
                 Cuando un negocio depende de mensajes sueltos, formularios sin
                 destino, seguimiento manual y una web sin consecuencias, pierde
-                velocidad, claridad y autoridad. La arquitectura correcta corrige
-                eso desde la raíz.
+                velocidad, claridad y autoridad. La arquitectura correcta
+                corrige eso desde la raíz.
               </p>
             </div>
           </div>

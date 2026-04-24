@@ -111,8 +111,8 @@ export default function Audit() {
             </p>
             <h2 className="mt-6 max-w-2xl font-headline text-[2rem] font-bold leading-tight text-tertiary md:text-[3.15rem]">
               No es un formulario de contacto. Es el filtro inicial para
-              determinar si tu negocio necesita una infraestructura comercial más
-              seria.
+              determinar si tu negocio necesita una infraestructura comercial
+              más seria.
             </h2>
             <p className="mt-6 max-w-2xl text-base leading-8 text-secondary">
               Revisamos necesidad, urgencia, rango de inversión y nivel de

@@ -8,9 +8,10 @@ export const navigationLinks = [
 ];
 
 export const ctaLabels = {
-  primary: "Solicitar Evaluación Estratégica",
-  secondary: "Ver Ecosistemas",
-  tertiary: "Evaluar mi Infraestructura Digital",
+  navbar: "Solicitar Auditoría",
+  primary: "Solicitar Auditoría Estratégica",
+  secondary: "Ver Casos Estratégicos",
+  tertiary: "Solicitar Evaluación",
 };
 
 export const heroHighlights = [

@@ -72,8 +72,9 @@ export default function Home() {
       <footer className="border-t border-outline-variant/10 py-14">
         <div className="container mx-auto flex flex-col gap-4 px-6 text-center md:px-12">
           <p className="mx-auto max-w-2xl text-sm leading-7 text-secondary">
-            Infraestructura digital para negocios que necesitan vender con control,
-            automatizar con criterio y escalar con una presencia premium.
+            Infraestructura digital para negocios que necesitan vender con
+            control, automatizar con criterio y escalar con una presencia
+            premium.
           </p>
           <a
             href={siteUrl}
