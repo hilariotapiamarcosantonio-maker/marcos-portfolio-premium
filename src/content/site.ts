@@ -108,7 +108,7 @@ export const needTypes = [
 
 export const budgetRanges = [
   "US$1,500 - US$3,000",
-  "US$3,000 - US$6,000",
+  "US$3,000 - US$5,000",
   "US$6,000 - US$10,000",
   "US$10,000+",
   "Aún estoy definiendo inversión",

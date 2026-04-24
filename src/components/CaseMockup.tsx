@@ -23,103 +23,95 @@ export default function CaseMockup({
     <div className="group relative isolate [perspective:1800px]">
       <div
         aria-hidden="true"
-        className={`absolute inset-x-12 top-8 h-20 rounded-full blur-3xl ${
-          featured ? "bg-primary/16" : "bg-white/[0.05]"
+        className={`absolute inset-x-14 top-7 h-16 rounded-full blur-3xl ${
+          featured ? "bg-primary/16" : "bg-white/[0.04]"
         }`}
       />
 
-      <div className="relative mx-auto max-w-[720px]">
+      <div className="relative mx-auto max-w-[700px]">
         <div
-          className={`panel-premium relative overflow-hidden rounded-[34px] border p-3.5 transition-[transform,border-color,box-shadow] duration-700 group-hover:-translate-y-1.5 ${
+          className={`panel-premium relative overflow-hidden rounded-[30px] border p-3 transition-[transform,border-color,box-shadow] duration-700 group-hover:-translate-y-1 ${
             featured
               ? "border-primary/28 bg-[linear-gradient(180deg,rgba(224,194,159,0.1),rgba(18,18,18,0.95))]"
-              : "border-outline-variant/18 bg-surface-container-lowest/92"
+              : "border-outline-variant/16 bg-surface-container-lowest/92"
           }`}
         >
           <div
             aria-hidden="true"
-            className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(224,194,159,0.14),transparent_42%)]"
+            className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(224,194,159,0.12),transparent_44%)]"
           />
 
-          <div className="relative overflow-hidden rounded-[26px] border border-white/8 bg-[#0c0c0c]">
-            <div className="flex items-center gap-3 border-b border-white/8 bg-white/[0.03] px-4 py-3">
+          <div className="relative overflow-hidden rounded-[22px] border border-white/8 bg-[#0c0c0c]">
+            <div className="flex items-center gap-3 border-b border-white/8 bg-white/[0.03] px-4 py-2.5">
               <div className="flex items-center gap-2">
                 <span className="h-2.5 w-2.5 rounded-full bg-[#ff6b5a]" />
                 <span className="h-2.5 w-2.5 rounded-full bg-[#f7c948]" />
                 <span className="h-2.5 w-2.5 rounded-full bg-[#2cc36b]" />
               </div>
 
-              <div className="flex-1 rounded-full border border-white/8 bg-black/20 px-4 py-1.5 text-[10px] font-medium uppercase tracking-[0.2em] text-outline">
+              <div className="flex-1 rounded-full border border-white/8 bg-black/20 px-4 py-1.5 text-[9px] font-medium uppercase tracking-[0.2em] text-outline">
                 MarcosHilario.System / {label}
               </div>
 
-              <span className="hidden rounded-full border border-primary/14 bg-primary/8 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-primary md:inline-flex">
+              <span className="hidden rounded-full border border-primary/14 bg-primary/8 px-2.5 py-1 text-[9px] font-semibold uppercase tracking-[0.18em] text-primary lg:inline-flex">
                 Caso de negocio
               </span>
             </div>
 
-            <div className="relative aspect-[16/10] overflow-hidden p-5 md:p-6">
+            <div className="relative aspect-[16/8.9] overflow-hidden p-3.5 md:p-4">
               <div
                 aria-hidden="true"
-                className="grid-fade absolute inset-0 opacity-30"
+                className="grid-fade absolute inset-0 opacity-18"
               />
               <div
                 aria-hidden="true"
-                className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-primary/12 to-transparent"
+                className="absolute inset-x-0 top-0 h-18 bg-gradient-to-b from-primary/10 to-transparent"
               />
 
-              <div className="relative grid h-full gap-4 md:grid-cols-[1.35fr_0.65fr]">
-                <div className="overflow-hidden rounded-[22px] border border-white/8 bg-[linear-gradient(180deg,rgba(255,255,255,0.045),rgba(255,255,255,0.015))]">
-                  <div className="flex items-center justify-between border-b border-white/8 px-4 py-3">
-                    <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-outline">
-                      Vista del sistema
-                    </p>
-                    <span className="rounded-full border border-white/8 bg-black/20 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-secondary">
-                      Laptop / browser
-                    </span>
-                  </div>
-
+              <div className="relative grid h-full gap-3 md:grid-cols-[1.8fr_0.42fr]">
+                <div className="overflow-hidden rounded-[18px] border border-white/8 bg-[linear-gradient(180deg,rgba(255,255,255,0.04),rgba(255,255,255,0.01))]">
                   {image ? (
-                    <div className="relative h-[calc(100%-53px)] overflow-hidden">
+                    <div className="relative h-full overflow-hidden">
                       <Image
                         src={image}
                         alt={imageAlt}
                         fill
-                        sizes="(max-width: 767px) 100vw, 55vw"
-                        className="object-cover object-top transition-transform duration-700 group-hover:scale-[1.02]"
+                        loading="eager"
+                        sizes="(max-width: 767px) 100vw, (max-width: 1279px) 74vw, 42vw"
+                        className="object-cover object-center brightness-[1.08] contrast-[1.03] saturate-[1.06] transition-transform duration-700 group-hover:scale-[1.018]"
                       />
-                      <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(10,10,10,0.04)_0%,rgba(10,10,10,0.1)_35%,rgba(10,10,10,0.82)_100%)]" />
-                      <div className="absolute left-4 top-4 inline-flex rounded-full border border-primary/16 bg-black/35 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-primary backdrop-blur">
+                      <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(10,10,10,0.02)_0%,rgba(10,10,10,0.08)_52%,rgba(10,10,10,0.58)_100%)]" />
+                      <div className="absolute left-3 top-3 inline-flex rounded-full border border-primary/16 bg-black/32 px-3 py-1.5 text-[9px] font-semibold uppercase tracking-[0.18em] text-primary backdrop-blur">
                         Activo digital en producción
                       </div>
-                      <div className="absolute inset-x-4 bottom-4 rounded-[18px] border border-white/10 bg-black/38 p-4 backdrop-blur-md">
-                        <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-outline">
+                      <div className="absolute inset-x-3 bottom-3 max-w-[72%] rounded-[16px] border border-white/10 bg-black/32 p-3 backdrop-blur-md">
+                        <p className="text-[9px] font-semibold uppercase tracking-[0.22em] text-outline">
                           Infraestructura comercial aplicada
                         </p>
-                        <p className="mt-3 text-sm leading-7 text-tertiary/88">
+                        <p className="mt-2 text-[13px] leading-6 text-tertiary/88">
                           {note}
                         </p>
                       </div>
                     </div>
                   ) : (
-                    <div className="flex h-[calc(100%-53px)] flex-col justify-between p-5">
+                    <div className="flex h-full flex-col justify-between p-4">
                       <div>
-                        <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-primary">
+                        <p className="text-[10px] font-semibold uppercase tracking-[0.26em] text-primary">
                           Caso visual
                         </p>
-                        <h4 className="mt-3 max-w-md font-headline text-2xl font-bold text-tertiary md:text-[2rem]">
+                        <h4 className="mt-3 max-w-md font-headline text-[1.55rem] font-bold leading-[1.06] text-tertiary">
                           {project}
                         </h4>
-                        <p className="mt-4 text-sm leading-7 text-secondary">
+                        <p className="mt-3 text-sm leading-6.5 text-secondary">
                           {note}
                         </p>
                       </div>
 
-                      <div className="rounded-[18px] border border-dashed border-primary/24 bg-black/15 p-4">
-                        <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-outline">
+                      <div className="rounded-[16px] border border-dashed border-primary/24 bg-black/15 p-4">
+                        <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-outline">
                           Vista del sistema
                         </p>
-                        <p className="mt-3 text-sm leading-7 text-secondary">
+                        <p className="mt-2 text-sm leading-6.5 text-secondary">
                           La captura principal se integra aquí para reforzar la
                           lectura comercial del activo más relevante dentro del
                           caso.
@@ -129,16 +121,16 @@ export default function CaseMockup({
                   )}
                 </div>
 
-                <div className="grid gap-4">
-                  <div className="rounded-[20px] border border-white/8 bg-white/[0.03] p-4">
-                    <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-outline">
-                      Activos visibles
+                <div className="grid gap-3 sm:grid-cols-2 md:grid-cols-1">
+                  <div className="rounded-[18px] border border-white/8 bg-white/[0.03] p-3.5">
+                    <p className="text-[9px] font-semibold uppercase tracking-[0.22em] text-outline">
+                      Activos
                     </p>
-                    <div className="mt-4 flex flex-wrap gap-2">
+                    <div className="mt-3 flex flex-wrap gap-2">
                       {chips.map((chip) => (
                         <span
                           key={chip}
-                          className="rounded-full border border-primary/16 bg-primary/8 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-primary"
+                          className="rounded-full border border-primary/16 bg-primary/8 px-2.5 py-1 text-[9px] font-semibold uppercase tracking-[0.18em] text-primary"
                         >
                           {chip}
                         </span>
@@ -146,29 +138,23 @@ export default function CaseMockup({
                     </div>
                   </div>
 
-                  <div className="rounded-[20px] border border-white/8 bg-white/[0.03] p-4">
-                    <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-outline">
-                      Lectura del caso
+                  <div className="rounded-[18px] border border-white/8 bg-white/[0.03] p-3.5">
+                    <p className="text-[9px] font-semibold uppercase tracking-[0.22em] text-outline">
+                      Lectura
                     </p>
-                    <ul className="mt-4 space-y-3 text-sm leading-7 text-secondary">
-                      <li className="flex gap-3">
+                    <ul className="mt-3 space-y-2.5 text-[12px] leading-5.5 text-secondary">
+                      <li className="flex gap-2.5">
                         <span className="mt-2 h-1.5 w-1.5 rounded-full bg-primary" />
                         <span>
-                          La vista se integra como evidencia operativa del
-                          sistema.
+                          La captura muestra el frente operativo con contexto
+                          comercial.
                         </span>
                       </li>
-                      <li className="flex gap-3">
+                      <li className="flex gap-2.5">
                         <span className="mt-2 h-1.5 w-1.5 rounded-full bg-primary" />
                         <span>
-                          La estructura mantiene foco comercial y jerarquía
-                          visual.
-                        </span>
-                      </li>
-                      <li className="flex gap-3">
-                        <span className="mt-2 h-1.5 w-1.5 rounded-full bg-primary" />
-                        <span>
-                          La captura acompaña la lectura estratégica del caso.
+                          La interfaz acompaña el caso sin desplazar la lectura
+                          estratégica.
                         </span>
                       </li>
                     </ul>
@@ -179,8 +165,8 @@ export default function CaseMockup({
           </div>
         </div>
 
-        <div className="mx-auto h-4 w-[86%] rounded-b-[999px] border border-white/8 bg-[linear-gradient(180deg,#4a4137_0%,#191919_100%)] shadow-[0_18px_40px_rgba(0,0,0,0.28)]" />
-        <div className="mx-auto h-2 w-[18%] rounded-b-[999px] bg-primary/30" />
+        <div className="mx-auto h-4 w-[86%] rounded-b-[999px] border border-white/8 bg-[linear-gradient(180deg,#4a4137_0%,#191919_100%)] shadow-[0_16px_34px_rgba(0,0,0,0.26)]" />
+        <div className="mx-auto h-2 w-[18%] rounded-b-[999px] bg-primary/28" />
       </div>
     </div>
   );

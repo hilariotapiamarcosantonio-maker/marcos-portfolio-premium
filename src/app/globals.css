@@ -45,7 +45,12 @@
   .panel-premium {
     box-shadow:
       inset 0 1px 0 rgba(255, 255, 255, 0.04),
-      0 24px 70px rgba(0, 0, 0, 0.28);
+      0 18px 56px rgba(0, 0, 0, 0.26);
+  }
+
+  .content-shell {
+    width: min(100% - 1.5rem, 1360px);
+    margin-inline: auto;
   }
 
   .grid-fade {
@@ -53,7 +58,7 @@
       linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
       linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
     background-size: 32px 32px;
-    mask-image: radial-gradient(circle at center, black 36%, transparent 85%);
+    mask-image: radial-gradient(circle at center, black 32%, transparent 82%);
   }
 
   .section-divider {
@@ -69,5 +74,17 @@
 
   .text-kern-widest {
     letter-spacing: 0.25em;
+  }
+
+  @media (min-width: 768px) {
+    .content-shell {
+      width: min(100% - 3rem, 1360px);
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .content-shell {
+      width: min(100% - 4rem, 1360px);
+    }
   }
 }

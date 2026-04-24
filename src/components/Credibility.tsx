@@ -9,14 +9,14 @@ export default function Credibility() {
   return (
     <section
       id="credibility"
-      className="relative scroll-mt-24 border-y border-outline-variant/10 bg-surface-container-low/60 py-28 md:py-36"
+      className="relative scroll-mt-24 border-y border-outline-variant/10 bg-surface-container-low/60 py-24 md:py-28"
     >
       <div
         aria-hidden="true"
         className="section-divider absolute inset-x-0 top-0 h-px"
       />
 
-      <div className="container mx-auto px-6 md:px-12">
+      <div className="content-shell">
         <SectionHeading
           eyebrow="Credibilidad"
           title="Señales de confianza para negocios que compran criterio, no solo diseño."
@@ -24,40 +24,40 @@ export default function Credibility() {
           align="center"
         />
 
-        <div className="mt-8 flex flex-wrap justify-center gap-3">
+        <div className="mt-6 flex flex-wrap justify-center gap-2.5">
           {credibilitySignals.map((signal) => (
             <span
               key={signal}
-              className="rounded-full border border-primary/16 bg-primary/8 px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.24em] text-primary"
+              className="rounded-full border border-primary/16 bg-primary/8 px-3.5 py-1.5 text-[10px] font-semibold uppercase tracking-[0.22em] text-primary"
             >
               {signal}
             </span>
           ))}
         </div>
 
-        <div className="mt-14 grid gap-6 xl:grid-cols-3">
+        <div className="mt-10 grid gap-5 xl:grid-cols-3">
           {credibilityPillars.map((pillar) => (
             <article
               key={pillar.title}
-              className="panel-premium relative overflow-hidden rounded-[32px] border border-outline-variant/14 bg-surface/92 p-7 transition-[transform,border-color,box-shadow] duration-500 hover:-translate-y-1.5 hover:border-primary/28 md:p-8"
+              className="panel-premium relative flex h-full flex-col overflow-hidden rounded-[30px] border border-outline-variant/14 bg-surface/92 p-6 transition-[transform,border-color,box-shadow] duration-500 hover:-translate-y-1 hover:border-primary/28"
             >
               <div
                 aria-hidden="true"
-                className="absolute inset-x-7 top-0 h-px bg-gradient-to-r from-primary/0 via-primary/55 to-primary/0"
+                className="absolute inset-x-6 top-0 h-px bg-gradient-to-r from-primary/0 via-primary/55 to-primary/0"
               />
 
-              <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-primary">
+              <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-primary">
                 Base de confianza
               </p>
-              <h3 className="mt-4 font-headline text-[1.8rem] font-bold leading-tight text-tertiary">
+              <h3 className="mt-3 font-headline text-[1.55rem] font-bold leading-[1.06] text-tertiary md:text-[1.7rem]">
                 {pillar.title}
               </h3>
-              <p className="mt-4 text-sm leading-7 text-secondary">
+              <p className="mt-3 text-sm leading-6.5 text-secondary">
                 {pillar.description}
               </p>
 
-              <div className="mt-6 border-t border-outline-variant/12 pt-5">
-                <ul className="space-y-3 text-sm leading-7 text-tertiary/88">
+              <div className="mt-5 border-t border-outline-variant/12 pt-4">
+                <ul className="space-y-2.5 text-[0.95rem] leading-6.5 text-tertiary/88">
                   {pillar.items.map((item) => (
                     <li key={item} className="flex gap-3">
                       <span className="mt-2 h-1.5 w-1.5 rounded-full bg-primary" />
@@ -70,8 +70,8 @@ export default function Credibility() {
           ))}
         </div>
 
-        <div className="panel-premium mt-12 flex flex-col items-center gap-5 rounded-[32px] border border-primary/14 bg-[linear-gradient(180deg,rgba(224,194,159,0.08),rgba(224,194,159,0.04))] px-6 py-8 text-center md:px-10">
-          <p className="max-w-3xl text-sm leading-7 text-secondary md:text-base">
+        <div className="panel-premium mt-10 flex flex-col items-center gap-4 rounded-[30px] border border-primary/14 bg-[linear-gradient(180deg,rgba(224,194,159,0.08),rgba(224,194,159,0.04))] px-5 py-7 text-center md:px-8">
+          <p className="max-w-3xl text-sm leading-6.5 text-secondary md:text-[0.98rem]">
             La intención no es parecer una agencia más grande. La intención es
             proyectar una práctica seria de arquitectura digital para negocios
             que necesitan presencia premium, seguimiento comercial y control de
@@ -79,7 +79,7 @@ export default function Credibility() {
           </p>
           <a
             href="#audit"
-            className="bronze-glow inline-flex items-center justify-center rounded-full px-7 py-4 text-xs font-extrabold uppercase tracking-[0.24em] text-on-primary shadow-[0_18px_40px_rgba(224,194,159,0.18)] transition-transform hover:-translate-y-0.5"
+            className="bronze-glow inline-flex items-center justify-center rounded-full px-6 py-3.5 text-[11px] font-extrabold uppercase tracking-[0.22em] text-on-primary shadow-[0_18px_40px_rgba(224,194,159,0.18)] transition-transform hover:-translate-y-0.5"
           >
             {ctaLabels.tertiary}
           </a>
