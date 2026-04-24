@@ -36,14 +36,14 @@ export async function POST(request: Request) {
       !payload.currentSituation
     ) {
       return NextResponse.json(
-        { error: "Completa los campos obligatorios para solicitar la auditoria." },
+        { error: "Completa los campos obligatorios para solicitar la auditoría." },
         { status: 400 },
       );
     }
 
     if (!emailPattern.test(payload.email)) {
       return NextResponse.json(
-        { error: "Ingresa un correo valido para continuar." },
+        { error: "Ingresa un correo válido para continuar." },
         { status: 400 },
       );
     }
@@ -79,13 +79,13 @@ export async function POST(request: Request) {
     return NextResponse.json(
       {
         message:
-          "Solicitud recibida. Marcos revisara tu infraestructura y respondera con el siguiente paso.",
+          "Solicitud recibida. Marcos revisará tu infraestructura y responderá con el siguiente paso.",
       },
       { status: 200 },
     );
   } catch {
     return NextResponse.json(
-      { error: "Fallo en la comunicacion del sistema. Intenta nuevamente." },
+      { error: "Falló la comunicación del sistema. Intenta nuevamente." },
       { status: 500 },
     );
   }

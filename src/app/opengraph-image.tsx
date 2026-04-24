@@ -56,13 +56,13 @@ export default function OpenGraphImage() {
             style={{
               color: "#f7f4ef",
               display: "flex",
-              fontSize: 42,
+              fontSize: 38,
               lineHeight: 1.2,
               maxWidth: "980px",
             }}
           >
-            Infraestructura digital para captar clientes, ordenar prospectos y
-            escalar con autoridad.
+            Infraestructura digital para captar clientes, organizar ventas y
+            operar con autoridad.
           </div>
         </div>
 
@@ -75,7 +75,7 @@ export default function OpenGraphImage() {
             textTransform: "uppercase",
           }}
         >
-          CRM / automatizacion / dashboards / conversion high-ticket
+          CRM / automatización / dashboards / conversión high-ticket
         </div>
       </div>
     ),

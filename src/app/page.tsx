@@ -5,7 +5,7 @@ import Hero from "@/components/Hero";
 import Manifesto from "@/components/Manifesto";
 import Navbar from "@/components/Navbar";
 import Offers from "@/components/Offers";
-import { siteUrl } from "@/content/site";
+import { offers, siteUrl } from "@/content/site";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -14,20 +14,36 @@ const jsonLd = {
   url: siteUrl,
   description:
     "Arquitectura digital premium para negocios que necesitan captar clientes, ordenar prospectos, automatizar procesos y operar con autoridad.",
-  areaServed: "Latinoamerica",
+  slogan:
+    "No construyo páginas web. Diseño infraestructura digital para negocios que quieren captar clientes, controlar su operación y escalar con autoridad.",
+  areaServed: ["República Dominicana", "Latinoamérica"],
   brand: "Marcos Hilario",
+  inLanguage: "es-DO",
   knowsAbout: [
     "Arquitectura digital",
     "CRM",
-    "Automatizacion comercial",
+    "Automatización comercial",
     "Dashboards de negocio",
-    "Landing pages de conversion",
+    "Landing pages de conversión",
   ],
   serviceType: [
-    "Auditoria Digital Estrategica",
+    "Auditoría Digital Estratégica",
     "Sistema Comercial Premium",
     "Ecosistema Digital Completo",
   ],
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Servicios estratégicos",
+    itemListElement: offers.map((offer, index) => ({
+      "@type": "Offer",
+      position: index + 1,
+      itemOffered: {
+        "@type": "Service",
+        name: offer.name,
+        description: offer.summary,
+      },
+    })),
+  },
 };
 
 export default function Home() {
@@ -51,7 +67,7 @@ export default function Home() {
       <Offers />
       <Audit />
 
-      <footer className="border-t border-outline-variant/10 py-10">
+      <footer className="border-t border-outline-variant/10 py-14">
         <div className="container mx-auto flex flex-col gap-4 px-6 text-center md:px-12">
           <p className="mx-auto max-w-2xl text-sm leading-7 text-secondary">
             Infraestructura digital para negocios que necesitan vender con control,

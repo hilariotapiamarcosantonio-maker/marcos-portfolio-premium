@@ -5,23 +5,23 @@ export default function Manifesto() {
   return (
     <section
       id="system"
-      className="scroll-mt-24 border-y border-outline-variant/10 bg-surface-container-low py-24 md:py-32"
+      className="scroll-mt-24 border-y border-outline-variant/10 bg-surface-container-low py-28 md:py-36"
     >
       <div className="container mx-auto px-6 md:px-12">
         <SectionHeading
           eyebrow="Sistema"
           title="Esto no es una web bonita. Es una infraestructura comercial sobria."
-          description="Cada modulo se construye para mover una consecuencia de negocio: captar mejor, responder mas rapido, seguir con criterio y operar con visibilidad."
+          description="Cada módulo se construye para mover una consecuencia de negocio: captar mejor, responder más rápido, seguir con criterio y operar con visibilidad."
         />
 
-        <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+        <div className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
           {businessModules.map((module) => (
             <article
               key={module.title}
-              className="rounded-[30px] border border-outline-variant/12 bg-surface px-6 py-8 transition-all hover:-translate-y-1 hover:border-primary/28"
+              className="panel-premium rounded-[30px] border border-outline-variant/12 bg-surface px-6 py-8 transition-all hover:-translate-y-1 hover:border-primary/28"
             >
               <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-primary">
-                Modulo
+                Módulo
               </p>
               <h3 className="mt-4 font-headline text-2xl font-bold text-tertiary">
                 {module.title}

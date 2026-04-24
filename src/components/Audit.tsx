@@ -28,7 +28,7 @@ const initialForm: LeadForm = {
 };
 
 const fieldClassName =
-  "w-full rounded-[18px] border border-outline-variant/20 bg-surface px-4 py-3 text-sm text-tertiary outline-none transition-colors placeholder:text-outline focus:border-primary/40";
+  "panel-premium w-full rounded-[20px] border border-outline-variant/18 bg-surface px-4 py-3.5 text-sm text-tertiary outline-none transition-colors placeholder:text-outline focus:border-primary/40";
 
 export default function Audit() {
   const [form, setForm] = useState<LeadForm>(initialForm);
@@ -69,7 +69,7 @@ export default function Audit() {
         status: "success",
         message:
           result.message ??
-          "Solicitud recibida. Marcos revisara tu infraestructura y respondera con el siguiente paso.",
+          "Solicitud recibida. Marcos revisará tu infraestructura y responderá con el siguiente paso.",
       });
       setForm(initialForm);
     } catch (error) {
@@ -78,7 +78,7 @@ export default function Audit() {
         message:
           error instanceof Error
             ? error.message
-            : "Fallo en la comunicacion del sistema. Intenta nuevamente.",
+            : "Falló la comunicación del sistema. Intenta nuevamente.",
       });
     }
   };
@@ -86,45 +86,66 @@ export default function Audit() {
   return (
     <section
       id="audit"
-      className="scroll-mt-24 border-t border-outline-variant/10 bg-surface py-24 md:py-32"
+      className="scroll-mt-24 border-t border-outline-variant/10 bg-surface py-28 md:py-36"
     >
       <div className="container mx-auto px-6 md:px-12">
         <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
-          <div className="rounded-[32px] border border-outline-variant/18 bg-surface-container-low p-8 md:p-10">
+          <div className="panel-premium rounded-[34px] border border-outline-variant/18 bg-surface-container-low p-8 md:p-10">
             <p className="text-[10px] font-semibold uppercase tracking-[0.32em] text-primary">
-              Auditoria digital estrategica
+              Auditoría digital estratégica
             </p>
-            <h2 className="mt-6 font-headline text-3xl font-bold text-tertiary md:text-5xl">
+            <h2 className="mt-6 max-w-2xl font-headline text-[2rem] font-bold leading-tight text-tertiary md:text-[3.2rem]">
               El siguiente paso no es pedir una web. Es entender el sistema que tu
               negocio realmente necesita.
             </h2>
-            <p className="mt-6 text-base leading-8 text-secondary">
-              Revisamos captacion, autoridad digital, CRM, seguimiento y
-              automatizacion para detectar donde se pierde dinero, tiempo o control.
-              Si hay encaje, definimos el siguiente nivel de infraestructura.
+            <p className="mt-6 max-w-2xl text-base leading-8 text-secondary">
+              Revisamos captación, autoridad digital, CRM, seguimiento y
+              automatización para detectar dónde se pierde dinero, tiempo o
+              control. Si hay encaje, definimos el siguiente nivel de
+              infraestructura.
             </p>
 
             <div className="mt-10 space-y-4">
-              {auditDeliverables.map((item) => (
+              {auditDeliverables.map((item, index) => (
                 <div
                   key={item}
-                  className="rounded-[22px] border border-primary/12 bg-primary/5 px-5 py-4 text-sm leading-7 text-secondary"
+                  className="rounded-[24px] border border-primary/12 bg-primary/5 px-5 py-4"
                 >
-                  {item}
+                  <div className="flex gap-4">
+                    <span className="font-headline text-xl font-bold text-primary/70">
+                      0{index + 1}
+                    </span>
+                    <p className="text-sm leading-7 text-secondary">{item}</p>
+                  </div>
                 </div>
               ))}
             </div>
 
             <div className="mt-10 border-t border-outline-variant/12 pt-6 text-sm leading-7 text-outline">
-              Respuesta inicial en 24 horas habiles. Tomamos proyectos donde la
-              infraestructura impacta captacion, conversion u operacion.
+              Respuesta inicial en 24 horas hábiles. Tomamos proyectos donde la
+              infraestructura impacta captación, conversión u operación.
             </div>
           </div>
 
           <form
             onSubmit={handleSubmit}
-            className="rounded-[32px] border border-primary/16 bg-surface-container-high p-8 md:p-10"
+            className="panel-premium relative overflow-hidden rounded-[34px] border border-primary/16 bg-surface-container-high p-8 md:p-10"
           >
+            <div
+              aria-hidden="true"
+              className="absolute inset-x-8 top-0 h-px bg-gradient-to-r from-primary/0 via-primary/55 to-primary/0"
+            />
+
+            <div className="mb-8">
+              <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-primary">
+                Solicitud de evaluación
+              </p>
+              <p className="mt-4 max-w-2xl text-sm leading-7 text-secondary">
+                Completa los datos base para revisar encaje, nivel de urgencia y
+                tipo de sistema que tu negocio necesita.
+              </p>
+            </div>
+
             <div className="grid gap-5 md:grid-cols-2">
               <label className="grid gap-2 text-sm text-secondary">
                 Nombre
@@ -166,7 +187,7 @@ export default function Audit() {
               </label>
 
               <label className="grid gap-2 text-sm text-secondary">
-                Telefono o WhatsApp
+                Teléfono o WhatsApp
                 <input
                   type="text"
                   name="phone"
@@ -179,7 +200,7 @@ export default function Audit() {
             </div>
 
             <label className="mt-5 grid gap-2 text-sm text-secondary">
-              Que nivel de oferta te interesa
+              Qué nivel de oferta te interesa
               <select
                 required
                 name="offerInterest"
@@ -187,20 +208,20 @@ export default function Audit() {
                 onChange={handleChange}
                 className={fieldClassName}
               >
-                <option value="">Selecciona una opcion</option>
+                <option value="">Selecciona una opción</option>
                 {offers.map((offer) => (
                   <option key={offer.name} value={offer.name}>
                     {offer.name}
                   </option>
                 ))}
-                <option value="Necesito claridad estrategica">
-                  Necesito claridad estrategica
+                <option value="Necesito claridad estratégica">
+                  Necesito claridad estratégica
                 </option>
               </select>
             </label>
 
             <label className="mt-5 grid gap-2 text-sm text-secondary">
-              Describe tu situacion actual
+              Describe tu situación actual
               <textarea
                 required
                 name="currentSituation"
@@ -208,7 +229,7 @@ export default function Audit() {
                 onChange={handleChange}
                 rows={6}
                 className={`${fieldClassName} resize-none`}
-                placeholder="Explica como captas prospectos hoy, donde se traba el seguimiento y que resultado buscas."
+                placeholder="Explica cómo captas prospectos hoy, dónde se traba el seguimiento y qué resultado buscas."
               />
             </label>
 
@@ -224,11 +245,11 @@ export default function Audit() {
               >
                 {submission.status === "sending"
                   ? "Enviando solicitud"
-                  : "Solicitar auditoria"}
+                  : "Solicitar auditoría"}
               </button>
 
               <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-outline">
-                Compatible con Vercel y webhook externo
+                Compatible con Vercel
               </p>
             </div>
 

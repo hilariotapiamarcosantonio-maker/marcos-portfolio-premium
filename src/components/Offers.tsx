@@ -5,48 +5,53 @@ export default function Offers() {
   return (
     <section
       id="offers"
-      className="scroll-mt-24 border-t border-outline-variant/10 bg-surface-container-low py-24 md:py-32"
+      className="scroll-mt-24 border-t border-outline-variant/10 bg-surface-container-low py-28 md:py-36"
     >
       <div className="container mx-auto px-6 md:px-12">
         <SectionHeading
           eyebrow="Oferta"
           title="Tres niveles para pasar de presencia digital a infraestructura comercial."
-          description="Cada oferta responde a una etapa distinta: claridad estrategica, orden comercial o ecosistema integral de alto rendimiento."
+          description="Cada oferta responde a una etapa distinta: claridad estratégica, orden comercial o ecosistema integral de alto rendimiento."
           align="center"
         />
 
-        <div className="mt-12 grid gap-6 xl:grid-cols-3">
+        <div className="mt-14 grid gap-7 xl:grid-cols-3">
           {offers.map((offer) => (
             <article
               key={offer.name}
-              className={`flex h-full flex-col rounded-[32px] border p-8 md:p-10 ${
+              className={`panel-premium relative flex h-full flex-col overflow-hidden rounded-[34px] border p-7 md:p-9 ${
                 offer.featured
-                  ? "border-primary/30 bg-[linear-gradient(180deg,rgba(224,194,159,0.08),rgba(21,21,21,0.9))]"
+                  ? "border-primary/30 bg-[linear-gradient(180deg,rgba(224,194,159,0.08),rgba(21,21,21,0.92))]"
                   : "border-outline-variant/14 bg-surface"
               }`}
             >
+              <div
+                aria-hidden="true"
+                className="absolute inset-x-7 top-0 h-px bg-gradient-to-r from-primary/0 via-primary/55 to-primary/0"
+              />
+
               <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-primary">
                 {offer.label}
               </p>
-              <h3 className="mt-4 font-headline text-3xl font-bold text-tertiary">
+              <h3 className="mt-4 font-headline text-[1.9rem] font-bold leading-tight text-tertiary md:text-[2.15rem]">
                 {offer.name}
               </h3>
-              <p className="mt-4 text-sm leading-7 text-secondary md:text-base">
+              <p className="mt-5 text-sm leading-7 text-secondary md:text-base">
                 {offer.summary}
               </p>
 
-              <div className="mt-8 border-t border-outline-variant/12 pt-6">
+              <div className="mt-8 rounded-[24px] border border-outline-variant/12 bg-black/8 p-5">
                 <p className="text-[10px] font-semibold uppercase tracking-[0.26em] text-outline">
-                  Para quien es
+                  Para quién es
                 </p>
                 <p className="mt-3 text-sm leading-7 text-tertiary/85">
                   {offer.audience}
                 </p>
               </div>
 
-              <div className="mt-8">
+              <div className="mt-8 rounded-[24px] border border-outline-variant/12 bg-black/8 p-5">
                 <p className="text-[10px] font-semibold uppercase tracking-[0.26em] text-outline">
-                  Que incluye
+                  Qué incluye
                 </p>
                 <ul className="mt-4 space-y-3 text-sm leading-7 text-secondary">
                   {offer.includes.map((item) => (
@@ -58,7 +63,7 @@ export default function Offers() {
                 </ul>
               </div>
 
-              <div className="mt-8 border-t border-outline-variant/12 pt-6">
+              <div className="mt-8 rounded-[24px] border border-primary/12 bg-primary/5 p-5">
                 <p className="text-[10px] font-semibold uppercase tracking-[0.26em] text-outline">
                   Resultado que busca
                 </p>
@@ -75,7 +80,7 @@ export default function Offers() {
                     : "border border-outline-variant/20 text-tertiary hover:border-primary/35 hover:text-primary"
                 }`}
               >
-                Solicitar evaluacion
+                Solicitar evaluación
               </a>
             </article>
           ))}

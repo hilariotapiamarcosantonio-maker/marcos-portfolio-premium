@@ -1,37 +1,37 @@
-export const siteUrl = "https://marcos-portfolio-premium-ze68.vercel.app";
+export const siteUrl = "https://marcos-portfolio-premium.vercel.app";
 
 export const navigationLinks = [
   { href: "#system", label: "Sistema" },
   { href: "#cases", label: "Casos" },
   { href: "#offers", label: "Oferta" },
-  { href: "#audit", label: "Auditoria" },
+  { href: "#audit", label: "Auditoría" },
 ];
 
 export const heroHighlights = [
-  "Captacion estructurada",
+  "Captación estructurada",
   "CRM y seguimiento",
-  "Automatizacion operativa",
+  "Automatización operativa",
   "Dashboards comerciales",
   "Autoridad digital",
 ];
 
 export const businessModules = [
   {
-    title: "Captacion premium",
+    title: "Captación premium",
     description:
       "Piezas de entrada que posicionan, filtran y convierten: landing pages, formularios, briefs y rutas de siguiente paso.",
     outcome:
-      "Mas conversaciones con sentido comercial y menos contactos sueltos sin contexto ni prioridad.",
+      "Más conversaciones con sentido comercial y menos contactos sueltos sin contexto ni prioridad.",
   },
   {
     title: "CRM y pipeline",
     description:
-      "Estados, criterios de calificacion, seguimiento y trazabilidad para que cada oportunidad tenga destino claro.",
+      "Estados, criterios de calificación, seguimiento y trazabilidad para que cada oportunidad tenga un destino claro.",
     outcome:
-      "Un proceso comercial visible, repetible y menos dependiente de memoria, urgencia o improvisacion.",
+      "Un proceso comercial visible, repetible y menos dependiente de memoria, urgencia o improvisación.",
   },
   {
-    title: "Automatizacion",
+    title: "Automatización",
     description:
       "Notificaciones, recordatorios, entregas internas y handoffs operativos conectados a la realidad del negocio.",
     outcome:
@@ -40,9 +40,9 @@ export const businessModules = [
   {
     title: "Dashboard comercial",
     description:
-      "Tableros y reportes para ver entradas, cuellos de botella, oportunidades activas y ritmo de conversion.",
+      "Tableros y reportes para ver entradas, cuellos de botella, oportunidades activas y ritmo de conversión.",
     outcome:
-      "Mas control ejecutivo sobre lo que entra, lo que avanza y lo que necesita correccion inmediata.",
+      "Más control ejecutivo sobre lo que entra, lo que avanza y lo que necesita corrección inmediata.",
   },
 ];
 
@@ -51,42 +51,54 @@ export const caseStudies = [
     name: "Inox Minier",
     sector: "Industrial / B2B",
     problem:
-      "La captacion y las cotizaciones dependian de seguimiento manual, conversaciones dispersas y poca visibilidad sobre oportunidades activas.",
+      "La captación y las cotizaciones dependían de seguimiento manual, conversaciones dispersas y poca visibilidad sobre oportunidades activas.",
     systemBuilt:
-      "Estructura comercial para servicios industriales, captacion de prospectos, CRM para seguimiento y automatizaciones para organizar respuestas y avance del pipeline.",
+      "Estructura comercial para servicios industriales, captación de prospectos, CRM para seguimiento y automatizaciones para organizar respuestas y avance del pipeline.",
     commercialValue:
-      "Mas control sobre oportunidades en curso, mejor capacidad para responder con autoridad y una presencia que ayuda a vender confianza antes de la llamada.",
+      "Más control sobre oportunidades en curso, mejor capacidad para responder con autoridad y una presencia que ayuda a vender confianza antes de la llamada.",
+    mockupLabel: "Landing + pipeline",
+    mockupNote:
+      "Espacio listo para hero del proyecto, formulario de captación o vista del seguimiento comercial.",
     featured: true,
   },
   {
     name: "Depot Graphics",
-    sector: "Produccion / Branding",
+    sector: "Producción / Branding",
     problem:
-      "El trabajo tenia calidad, pero las solicitudes llegaban sin filtro claro y el proceso de cotizacion consumia demasiada energia operativa.",
+      "El trabajo tenía calidad, pero las solicitudes llegaban sin filtro claro y el proceso de cotización consumía demasiada energía operativa.",
     systemBuilt:
-      "Sitio orientado a servicios, formularios de briefing, organizacion de prospectos y tablero para priorizar proyectos con mejor encaje comercial.",
+      "Sitio orientado a servicios, formularios de briefing, organización de prospectos y tablero para priorizar proyectos con mejor encaje comercial.",
     commercialValue:
-      "Menos friccion al cotizar, mejor filtro de clientes y un proceso mas solido para defender proyectos de mayor valor.",
+      "Menos fricción al cotizar, mejor filtro de clientes y un proceso más sólido para defender proyectos de mayor valor.",
+    mockupLabel: "Briefing + tablero",
+    mockupNote:
+      "Reservado para mockup de la web, flujo de briefing o panel de priorización comercial.",
   },
   {
-    name: "Vista del Rio",
+    name: "Vista del Río",
     sector: "Proyecto / Experiencia de marca",
     problem:
-      "Habia interes inicial, pero sin una ruta clara de seguimiento el valor percibido se diluia y las conversaciones perdian ritmo.",
+      "Había interés inicial, pero sin una ruta clara de seguimiento el valor percibido se diluía y las conversaciones perdían ritmo.",
     systemBuilt:
-      "Arquitectura de captacion, CRM para interesados, automatizaciones de contacto y contenido estructurado para sostener confianza durante la decision.",
+      "Arquitectura de captación, CRM para interesados, automatizaciones de contacto y contenido estructurado para sostener confianza durante la decisión.",
     commercialValue:
-      "Seguimiento menos manual, conversaciones mejor ordenadas y mayor capacidad para convertir interes en reuniones o proximos pasos concretos.",
+      "Seguimiento menos manual, conversaciones mejor ordenadas y mayor capacidad para convertir interés en reuniones o próximos pasos concretos.",
+    mockupLabel: "Captación + nurturing",
+    mockupNote:
+      "Espacio preparado para mostrar landing, secuencia de seguimiento o vista del CRM del proyecto.",
   },
   {
-    name: "Kalon / Santuario Estetica",
-    sector: "Estetica premium",
+    name: "Kalon / Santuario Estética",
+    sector: "Estética premium",
     problem:
       "Una marca aspiracional no puede depender de mensajes sueltos y agenda fragmentada para vender tratamientos de ticket alto.",
     systemBuilt:
-      "Web premium por lineas de servicio, captacion segmentada, CRM de seguimiento y automatizaciones para reactivar prospectos y sostener la experiencia comercial.",
+      "Web premium por líneas de servicio, captación segmentada, CRM de seguimiento y automatizaciones para reactivar prospectos y sostener la experiencia comercial.",
     commercialValue:
-      "Mayor consistencia en la percepcion premium, trazabilidad del prospecto y mejor control sobre conversion y reactivacion.",
+      "Mayor consistencia en la percepción premium, trazabilidad del prospecto y mejor control sobre conversión y reactivación.",
+    mockupLabel: "Web premium + reactivación",
+    mockupNote:
+      "Área reservada para capturas de la experiencia visual, landing de servicios o automatizaciones de seguimiento.",
     featured: true,
   },
   {
@@ -95,49 +107,55 @@ export const caseStudies = [
     problem:
       "La demanda llegaba sin estructura suficiente para ordenar fechas, prioridades, confirmaciones y seguimiento durante picos operativos.",
     systemBuilt:
-      "Catalogo orientado a pedido, formularios de encargo, automatizaciones de confirmacion y tablero operativo para mantener claridad en cada solicitud.",
+      "Catálogo orientado a pedido, formularios de encargo, automatizaciones de confirmación y tablero operativo para mantener claridad en cada solicitud.",
     commercialValue:
-      "Menos caos en la gestion diaria, respuestas mas rapidas y una experiencia que permite vender con orden aun cuando aumenta la demanda.",
+      "Menos caos en la gestión diaria, respuestas más rápidas y una experiencia que permite vender con orden aun cuando aumenta la demanda.",
+    mockupLabel: "Catálogo + operación",
+    mockupNote:
+      "Preparado para mockups de catálogo, formulario de pedidos o panel operativo del flujo.",
   },
   {
     name: "Capital en Orden",
-    sector: "Consultoria / Finanzas",
+    sector: "Consultoría / Finanzas",
     problem:
-      "El conocimiento generaba interes, pero faltaba una arquitectura que educara, calificara y llevara al prospecto correcto hacia una conversacion seria.",
+      "El conocimiento generaba interés, pero faltaba una arquitectura que educara, calificara y llevara al prospecto correcto hacia una conversación seria.",
     systemBuilt:
-      "Landing de autoridad, secuencia de captacion, CRM para diagnostico y seguimiento con foco en calificacion y proximo paso comercial.",
+      "Landing de autoridad, secuencia de captación, CRM para diagnóstico y seguimiento con foco en calificación y próximo paso comercial.",
     commercialValue:
-      "Mas autoridad percibida, conversaciones mejor calificadas y un proceso alineado con servicios consultivos de alto valor.",
+      "Más autoridad percibida, conversaciones mejor calificadas y un proceso alineado con servicios consultivos de alto valor.",
+    mockupLabel: "Autoridad + diagnóstico",
+    mockupNote:
+      "Espacio listo para capturas de landing consultiva, secuencia de diagnóstico o panel comercial.",
   },
 ];
 
 export const offers = [
   {
     label: "Nivel 01",
-    name: "Auditoria Digital Estrategica",
+    name: "Auditoría Digital Estratégica",
     summary:
-      "Diagnostico ejecutivo para entender donde tu sistema comercial se rompe y que infraestructura conviene construir primero.",
+      "Diagnóstico ejecutivo para entender dónde tu sistema comercial se rompe y qué infraestructura conviene construir primero.",
     audience:
-      "Negocios con presencia digital dispersa, captacion inconsistente o poca claridad sobre que corregir antes de invertir mas.",
+      "Negocios con presencia digital dispersa, captación inconsistente o poca claridad sobre qué corregir antes de invertir más.",
     includes: [
-      "Revision de web, captacion, oferta, CTA y autoridad digital",
-      "Lectura de fricciones en CRM, seguimiento y operacion comercial",
+      "Revisión de web, captación, oferta, CTA y autoridad digital",
+      "Lectura de fricciones en CRM, seguimiento y operación comercial",
       "Mapa de prioridades con enfoque en impacto y viabilidad",
-      "Ruta recomendada para ejecutar sin improvisacion",
+      "Ruta recomendada para ejecutar sin improvisación",
     ],
     result:
-      "Salir con claridad estrategica sobre que ajustar primero para dejar de perder oportunidades valiosas.",
+      "Salir con claridad estratégica sobre qué ajustar primero para dejar de perder oportunidades valiosas.",
     featured: false,
   },
   {
     label: "Nivel 02",
     name: "Sistema Comercial Premium",
     summary:
-      "Infraestructura enfocada en captar mejor, responder mas rapido y organizar prospectos con un proceso comercial serio.",
+      "Infraestructura enfocada en captar mejor, responder más rápido y organizar prospectos con un proceso comercial serio.",
     audience:
       "Negocios que ya venden, pero necesitan ordenar pipeline, automatizar seguimiento y elevar su autoridad digital.",
     includes: [
-      "Landing o web comercial orientada a conversion",
+      "Landing o web comercial orientada a conversión",
       "CRM con etapas, filtros y criterios de seguimiento",
       "Automatizaciones clave para formularios, recordatorios y handoffs",
       "Dashboard inicial para lectura comercial",
@@ -152,21 +170,21 @@ export const offers = [
     summary:
       "Diseño integral de la arquitectura digital para marcas que necesitan operar con autoridad, visibilidad y escalabilidad real.",
     audience:
-      "Negocios que quieren conectar captacion, CRM, automatizacion, reporting y operacion dentro de un sistema de alto rendimiento.",
+      "Negocios que quieren conectar captación, CRM, automatización, reporting y operación dentro de un sistema de alto rendimiento.",
     includes: [
-      "Arquitectura integral de captacion y autoridad de marca",
-      "CRM, automatizaciones y tableros conectados a la operacion",
+      "Arquitectura integral de captación y autoridad de marca",
+      "CRM, automatizaciones y tableros conectados a la operación",
       "Diseño de flujos para equipo, prospectos y seguimiento",
-      "Base para mejora continua y expansion del ecosistema",
+      "Base para mejora continua y expansión del ecosistema",
     ],
     result:
-      "Un sistema donde marketing, ventas y operacion dejan de funcionar por intuicion y empiezan a trabajar con control ejecutivo.",
+      "Un sistema donde marketing, ventas y operación dejan de funcionar por intuición y empiezan a trabajar con control ejecutivo.",
     featured: false,
   },
 ];
 
 export const auditDeliverables = [
-  "Diagnostico de captacion, mensaje comercial y autoridad digital.",
-  "Revision de CRM, seguimiento, automatizaciones y puntos ciegos operativos.",
-  "Recomendacion del sistema ideal segun nivel de negocio, complejidad y objetivo comercial.",
+  "Diagnóstico de captación, mensaje comercial y autoridad digital.",
+  "Revisión de CRM, seguimiento, automatizaciones y puntos ciegos operativos.",
+  "Recomendación del sistema ideal según nivel de negocio, complejidad y objetivo comercial.",
 ];

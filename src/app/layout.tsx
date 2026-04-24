@@ -23,19 +23,20 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Marcos Hilario | Arquitectura Digital de Alto Rendimiento",
+    default:
+      "Marcos Hilario | Arquitectura Digital Premium para Captación, Ventas y Control Comercial",
     template: "%s | Marcos Hilario",
   },
   description:
-    "No construyo paginas web. Diseno infraestructura digital premium para negocios que necesitan captar clientes, controlar prospectos, automatizar procesos y escalar con autoridad.",
+    "No construyo páginas web. Diseño infraestructura digital premium para negocios que necesitan captar clientes, controlar prospectos, automatizar procesos y escalar con autoridad.",
   keywords: [
     "arquitectura digital",
     "crm",
-    "automatizacion",
+    "automatización",
     "dashboards comerciales",
     "landing premium",
     "ecosistema digital",
-    "consultor estrategico digital",
+    "consultor estratégico digital",
     "Marcos Hilario",
   ],
   authors: [{ name: "Marcos Hilario", url: siteUrl }],
@@ -45,9 +46,10 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Marcos Hilario | Arquitectura Digital de Alto Rendimiento",
+    title:
+      "Marcos Hilario | Arquitectura Digital Premium para Captación, Ventas y Control Comercial",
     description:
-      "Infraestructura digital premium para captar clientes, ordenar prospectos, automatizar procesos y operar con autoridad.",
+      "Infraestructura digital premium para captar clientes, ordenar prospectos, automatizar procesos, organizar ventas y operar con autoridad.",
     url: siteUrl,
     siteName: "Marcos Hilario",
     locale: "es_DO",
@@ -63,7 +65,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Marcos Hilario | Arquitectura Digital de Alto Rendimiento",
+    title:
+      "Marcos Hilario | Arquitectura Digital Premium para Captación, Ventas y Control Comercial",
     description:
       "Infraestructura digital premium para negocios que venden servicios, proyectos y tickets altos.",
     images: ["/opengraph-image"],

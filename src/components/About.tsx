@@ -2,14 +2,14 @@ import SectionHeading from "@/components/SectionHeading";
 
 const executionPoints = [
   {
-    title: "Capta con intencion",
+    title: "Capta con intención",
     description:
-      "La web deja de ser vitrina y se convierte en entrada seria para prospectos con contexto, necesidad y prioridad.",
+      "La web deja de ser vitrina y se convierte en una entrada seria para prospectos con contexto, necesidad y prioridad.",
   },
   {
-    title: "Ordena la conversacion comercial",
+    title: "Ordena la conversación comercial",
     description:
-      "CRM, calificacion, etapas y seguimiento para no depender de memoria, chats dispersos o urgencias mal gestionadas.",
+      "CRM, calificación, etapas y seguimiento para no depender de memoria, chats dispersos o urgencias mal gestionadas.",
   },
   {
     title: "Automatiza sin perder criterio",
@@ -19,20 +19,20 @@ const executionPoints = [
   {
     title: "Controla desde un dashboard",
     description:
-      "Visibilidad sobre oportunidades, cuellos de botella y ritmo comercial para dirigir la operacion con autoridad.",
+      "Visibilidad sobre oportunidades, cuellos de botella y ritmo comercial para dirigir la operación con autoridad.",
   },
 ];
 
 export default function About() {
   return (
-    <section id="about" className="scroll-mt-24 py-24 md:py-32">
+    <section id="about" className="scroll-mt-24 py-28 md:py-36">
       <div className="container mx-auto px-6 md:px-12">
         <div className="grid gap-12 lg:grid-cols-[0.95fr_1.05fr]">
-          <div className="rounded-[32px] border border-outline-variant/18 bg-surface-container-low/80 p-8 md:p-10">
+          <div className="panel-premium rounded-[34px] border border-outline-variant/18 bg-surface-container-low/85 p-8 md:p-10">
             <SectionHeading
-              eyebrow="Direccion estrategica"
+              eyebrow="Dirección estratégica"
               title="Marcos Hilario diseña el sistema que une autoridad digital con control comercial."
-              description="No entra a decorar presencia digital. Entra a construir la infraestructura que conecta captacion, seguimiento, automatizacion y operacion para negocios que necesitan vender con orden."
+              description="No entra a decorar presencia digital. Entra a construir la infraestructura que conecta captación, seguimiento, automatización y operación para negocios que necesitan vender con orden."
             />
 
             <div className="mt-8 rounded-[24px] border border-primary/15 bg-primary/6 p-6">
@@ -40,7 +40,7 @@ export default function About() {
                 Cuando un negocio depende de mensajes sueltos, formularios sin
                 destino, seguimiento manual y una web sin consecuencias, pierde
                 velocidad, claridad y autoridad. La arquitectura correcta corrige
-                eso desde la raiz.
+                eso desde la raíz.
               </p>
             </div>
           </div>
@@ -49,7 +49,7 @@ export default function About() {
             {executionPoints.map((point) => (
               <article
                 key={point.title}
-                className="rounded-[28px] border border-outline-variant/14 bg-surface-container-lowest/70 p-6 transition-colors hover:border-primary/30"
+                className="panel-premium rounded-[30px] border border-outline-variant/14 bg-surface-container-lowest/80 p-6 transition-colors hover:border-primary/30"
               >
                 <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-primary">
                   Marcos Hilario

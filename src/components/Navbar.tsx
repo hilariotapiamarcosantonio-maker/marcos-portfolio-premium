@@ -17,7 +17,7 @@ export default function Navbar() {
 
   return (
     <nav
-      aria-label="Navegacion principal"
+      aria-label="Navegación principal"
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
         scrolled
           ? "border-b border-outline-variant/20 bg-surface/88 backdrop-blur-xl"
@@ -48,7 +48,7 @@ export default function Navbar() {
           href="#audit"
           className="rounded-full border border-primary/20 bg-primary px-4 py-3 text-[10px] font-bold uppercase tracking-[0.26em] text-on-primary shadow-[0_12px_40px_rgba(224,194,159,0.18)] transition-transform hover:-translate-y-0.5 md:px-6"
         >
-          Solicitar auditoria
+          Solicitar auditoría
         </a>
       </div>
     </nav>
