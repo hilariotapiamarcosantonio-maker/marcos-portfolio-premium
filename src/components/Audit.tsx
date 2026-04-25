@@ -5,7 +5,6 @@ import { useState } from "react";
 import {
   auditDeliverables,
   budgetRanges,
-  ctaLabels,
   needTypes,
 } from "@/content/site";
 
@@ -53,12 +52,11 @@ const needTypeDescriptions: Record<string, string> = {
 };
 
 const budgetDescriptions: Record<string, string> = {
-  "US$1,500 - US$3,000": "Inversión inicial para resolver una capa crítica.",
-  "US$3,000 - US$5,000": "Escenario para ordenar captación y seguimiento.",
-  "US$6,000 - US$10,000": "Margen para un sistema comercial más robusto.",
-  "US$10,000+": "Infraestructura de decisión ejecutiva y escalado.",
-  "Aún estoy definiendo inversión":
-    "Necesito calibrar alcance antes de cerrar la cifra.",
+  "US$1,500 - US$3,000": "Sistema inicial de captación",
+  "US$3,000 - US$5,000": "Orden comercial y seguimiento",
+  "US$6,000 - US$10,000": "Infraestructura comercial avanzada",
+  "US$10,000+": "Ecosistema digital integral",
+  "Aún estoy definiendo inversión": "Necesito claridad antes de decidir",
 };
 
 function OptionCard({
@@ -215,22 +213,6 @@ export default function Audit() {
               ))}
             </div>
 
-            <div className="mt-8 space-y-3">
-              {auditDeliverables.map((item, index) => (
-                <div
-                  key={item}
-                  className="rounded-[20px] border border-primary/12 bg-primary/5 px-4 py-3.5"
-                >
-                  <div className="flex gap-3.5">
-                    <span className="font-headline text-lg font-bold text-primary/70">
-                      0{index + 1}
-                    </span>
-                    <p className="text-sm leading-6.5 text-secondary">{item}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-
             <div className="mt-8 rounded-[22px] border border-outline-variant/12 bg-black/10 p-4 text-sm leading-6.5 text-outline">
               Prioridad para proyectos donde la infraestructura impacta
               autoridad, captación, seguimiento o control operativo. La
@@ -252,12 +234,10 @@ export default function Audit() {
                 Aplicación estratégica
               </p>
               <h3 className="mt-2.5 sm:mt-4 max-w-2xl font-headline text-[1.4rem] sm:text-[1.55rem] font-bold leading-[1.05] sm:leading-[1.06] text-tertiary/95 md:text-[2.05rem]">
-                Cuéntame qué tipo de sistema necesitas y el rango de inversión
-                con el que estás pensando resolverlo.
+                Define la etapa actual de tu operación y el nivel de infraestructura que buscas estructurar.
               </h3>
               <p className="mt-2 sm:mt-3 max-w-2xl text-[0.85rem] sm:text-sm leading-[1.4] sm:leading-6.5 text-secondary/75">
-                La idea es detectar encaje rápido y proteger el tiempo de ambos
-                lados antes de abrir una conversación.
+                Esta información permite filtrar si el ecosistema que diseña Marcos Hilario es la respuesta técnica a tu prioridad de negocio hoy.
               </p>
             </div>
 
@@ -365,8 +345,7 @@ export default function Audit() {
                   Revisión selectiva
                 </p>
                 <p className="mt-2 text-sm leading-6.5 text-secondary">
-                  Si hay encaje, el siguiente paso será una conversación
-                  estratégica con contexto previo y mayor claridad de alcance.
+                  Si hay encaje, el siguiente paso será una conversación estratégica con contexto previo y mayor claridad de alcance.
                 </p>
               </div>
 
@@ -381,7 +360,7 @@ export default function Audit() {
               >
                 {submission.status === "sending"
                   ? "Enviando aplicación"
-                  : ctaLabels.primary}
+                  : "Solicitar Auditoría Estratégica"}
               </button>
             </div>
 
