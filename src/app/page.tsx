@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import ArchitectProfile from "@/components/ArchitectProfile";
 import Audit from "@/components/Audit";
 import Cases from "@/components/Cases";
 import Credibility from "@/components/Credibility";
@@ -63,6 +64,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Credibility />
+      <ArchitectProfile />
       <About />
       <Manifesto />
       <Cases />
