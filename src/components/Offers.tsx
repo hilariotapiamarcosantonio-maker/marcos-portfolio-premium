@@ -20,11 +20,11 @@ export default function Offers() {
           align="center"
         />
 
-        <div className="mt-14 grid gap-6 xl:grid-cols-3">
+        <div className="mt-10 sm:mt-14 grid gap-5 sm:gap-6 xl:grid-cols-3">
           {offers.map((offer) => (
             <article
               key={offer.name}
-              className={`panel-premium relative flex h-full flex-col overflow-hidden rounded-[30px] border p-6 transition-[transform,border-color,box-shadow] duration-500 hover:-translate-y-1 md:p-7 ${
+              className={`panel-premium relative flex h-full flex-col overflow-hidden rounded-[26px] sm:rounded-[30px] border p-5 sm:p-6 transition-[transform,border-color,box-shadow] duration-500 hover:-translate-y-1 md:p-7 ${
                 offer.featured
                   ? "border-primary/30 bg-[linear-gradient(180deg,rgba(224,194,159,0.08),rgba(21,21,21,0.92))]"
                   : "border-outline-variant/14 bg-surface"
@@ -53,42 +53,42 @@ export default function Offers() {
                   ) : null}
                 </div>
 
-                <h3 className="mt-3 font-headline text-[1.55rem] font-bold leading-[1.06] text-tertiary md:text-[1.78rem]">
+                <h3 className="mt-2.5 sm:mt-3 font-headline text-[1.4rem] sm:text-[1.55rem] font-bold leading-[1.05] sm:leading-[1.06] text-tertiary md:text-[1.78rem]">
                   {offer.name}
                 </h3>
-                <p className="mt-4 text-[0.96rem] leading-6.5 text-secondary">
+                <p className="mt-3 sm:mt-4 text-[0.9rem] sm:text-[0.96rem] leading-[1.4] sm:leading-6.5 text-secondary">
                   {offer.summary}
                 </p>
 
-                <div className="mt-5 grid gap-3">
-                  <div className="rounded-[20px] border border-outline-variant/12 bg-black/10 p-4">
-                    <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-outline">
+                <div className="mt-4 sm:mt-5 grid gap-2.5 sm:gap-3">
+                  <div className="rounded-[18px] sm:rounded-[20px] border border-outline-variant/12 bg-black/10 px-4 py-3.5 sm:p-4">
+                    <p className="text-[9px] sm:text-[10px] font-semibold uppercase tracking-[0.22em] text-outline">
                       Para quién es
                     </p>
-                    <p className="mt-2 text-sm leading-6.5 text-tertiary/85">
+                    <p className="mt-1.5 sm:mt-2 text-[0.85rem] sm:text-sm leading-[1.35] sm:leading-6.5 text-tertiary/85">
                       {offer.audience}
                     </p>
                   </div>
 
-                  <div className="rounded-[20px] border border-outline-variant/12 bg-black/10 p-4">
-                    <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-outline">
+                  <div className="rounded-[18px] sm:rounded-[20px] border border-outline-variant/12 bg-black/10 px-4 py-3.5 sm:p-4">
+                    <p className="text-[9px] sm:text-[10px] font-semibold uppercase tracking-[0.22em] text-outline">
                       Qué incluye
                     </p>
-                    <ul className="mt-3 space-y-2.5 text-sm leading-6.5 text-secondary">
+                    <ul className="mt-2.5 sm:mt-3 space-y-2 sm:space-y-2.5 text-[0.85rem] sm:text-sm leading-[1.3] sm:leading-6.5 text-secondary">
                       {offer.includes.map((item) => (
-                        <li key={item} className="flex gap-3">
-                          <span className="mt-2 h-1.5 w-1.5 rounded-full bg-primary" />
+                        <li key={item} className="flex gap-2.5 sm:gap-3">
+                          <span className="mt-1.5 sm:mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
                           <span>{item}</span>
                         </li>
                       ))}
                     </ul>
                   </div>
 
-                  <div className="rounded-[20px] border border-primary/12 bg-primary/5 p-4">
-                    <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-outline">
+                  <div className="rounded-[18px] sm:rounded-[20px] border border-primary/12 bg-primary/5 px-4 py-3.5 sm:p-4">
+                    <p className="text-[9px] sm:text-[10px] font-semibold uppercase tracking-[0.22em] text-outline">
                       Resultado que busca
                     </p>
-                    <p className="mt-2 text-sm leading-6.5 text-tertiary/85">
+                    <p className="mt-1.5 sm:mt-2 text-[0.85rem] sm:text-sm leading-[1.35] sm:leading-6.5 text-tertiary/85">
                       {offer.result}
                     </p>
                   </div>
@@ -96,7 +96,7 @@ export default function Offers() {
 
                 <a
                   href="#audit"
-                  className={`mt-6 inline-flex items-center justify-center rounded-full px-6 py-3.5 text-[11px] font-extrabold uppercase tracking-[0.22em] transition-[transform,border-color,color,box-shadow] hover:-translate-y-0.5 ${
+                  className={`mt-5 sm:mt-6 flex w-full sm:inline-flex items-center justify-center rounded-full px-6 py-3.5 text-[10.5px] sm:text-[11px] font-extrabold uppercase tracking-[0.22em] transition-[transform,border-color,color,box-shadow] hover:-translate-y-0.5 ${
                     offer.featured
                       ? "bronze-glow text-on-primary shadow-[0_18px_40px_rgba(224,194,159,0.18)]"
                       : "border border-outline-variant/20 text-tertiary hover:border-primary/35 hover:text-primary hover:shadow-[0_18px_40px_rgba(0,0,0,0.18)]"

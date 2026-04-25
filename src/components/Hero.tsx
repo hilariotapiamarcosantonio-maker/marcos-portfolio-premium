@@ -36,20 +36,20 @@ export default function Hero() {
       <div className="content-shell relative z-10">
         <div className="grid gap-6 sm:gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(390px,520px)] lg:items-start lg:gap-9 xl:gap-11">
           <div className="min-w-0 max-w-[48rem]">
-            <div className="flex sm:block justify-start sm:justify-start">
-              <span className="inline-flex rounded-full border border-primary/20 bg-primary/8 px-4 py-1.5 text-[10px] font-semibold uppercase tracking-[0.28em] text-primary">
+            <div className="flex justify-center sm:justify-start">
+              <span className="inline-flex max-w-[95vw] text-center justify-center rounded-full border border-primary/20 bg-primary/8 px-3.5 sm:px-4 py-1.5 text-[9px] font-semibold uppercase tracking-[0.18em] sm:tracking-[0.28em] text-primary sm:text-[10px]">
                 Arquitectura digital premium
               </span>
             </div>
 
-            <h1 className="mt-4 max-w-[calc(100vw-1.5rem)] break-words font-headline text-[clamp(1.65rem,6.8vw,2.2rem)] font-extrabold leading-[1.08] tracking-normal text-tertiary sm:text-[clamp(2rem,7.2vw,2.55rem)] sm:leading-[1.04] sm:max-w-[23ch] lg:max-w-[800px] lg:text-[clamp(2.85rem,3.35vw,3.4rem)]">
+            <h1 className="mt-5 sm:mt-4 max-w-[calc(100vw-1.5rem)] break-words font-headline text-[clamp(1.65rem,6.8vw,2.2rem)] font-extrabold leading-[1.08] tracking-normal text-tertiary sm:text-[clamp(2rem,7.2vw,2.55rem)] sm:leading-[1.04] sm:max-w-[23ch] lg:max-w-[800px] lg:text-[clamp(2.85rem,3.35vw,3.4rem)]">
               <span className="block">No construyo páginas web.</span>
               <span className="mt-2 block">
                 Construyo infraestructura digital para vender con autoridad.
               </span>
             </h1>
 
-            <p className="mt-4 max-w-[calc(100vw-1.5rem)] text-[0.95rem] leading-6 text-secondary sm:max-w-[44rem] sm:text-[0.98rem] sm:leading-7 md:text-[1.04rem]">
+            <p className="mt-4 max-w-[calc(100vw-1.5rem)] text-[0.95rem] leading-[1.6] text-secondary sm:max-w-[44rem] sm:text-[0.98rem] sm:leading-7 md:text-[1.04rem]">
               Diseño ecosistemas comerciales con web premium, CRM,
               automatización, dashboards y seguimiento para negocios que
               necesitan captar, organizar y convertir mejor sus oportunidades.
@@ -70,11 +70,11 @@ export default function Hero() {
               </a>
             </div>
 
-            <div className="mt-5 flex flex-wrap gap-2 sm:gap-2.5 justify-start">
+            <div className="mt-6 sm:mt-5 flex flex-wrap justify-center sm:justify-start gap-1.5 sm:gap-2.5">
               {heroHighlights.map((highlight) => (
                 <span
                   key={highlight}
-                  className="rounded-full border border-outline-variant/28 bg-surface-container-low/70 px-3 py-1.5 sm:px-3.5 sm:py-1.5 text-[10.5px] sm:text-[11px] font-medium text-secondary transition-[transform,border-color,color] duration-300 hover:-translate-y-0.5 hover:border-primary/24 hover:text-tertiary"
+                  className="rounded-full border border-outline-variant/28 bg-surface-container-low/70 px-3 py-1.5 sm:px-3.5 sm:py-1.5 text-[10px] sm:text-[11px] font-medium text-secondary transition-[transform,border-color,color] duration-300 hover:-translate-y-0.5 hover:border-primary/24 hover:text-tertiary"
                 >
                   {highlight}
                 </span>

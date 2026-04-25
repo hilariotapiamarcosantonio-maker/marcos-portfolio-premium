@@ -42,7 +42,7 @@ export default function CaseMockup({
           />
 
           <div className="relative overflow-hidden rounded-[18px] sm:rounded-[22px] border border-white/8 bg-[#0c0c0c]">
-            <div className="flex items-center gap-2 sm:gap-3 border-b border-white/8 bg-white/[0.03] px-3 sm:px-4 py-2 sm:py-2.5">
+            <div className="hidden sm:flex items-center gap-2 sm:gap-3 border-b border-white/8 bg-white/[0.03] px-3 sm:px-4 py-2 sm:py-2.5">
               <div className="flex items-center gap-1.5 sm:gap-2">
                 <span className="h-2 w-2 sm:h-2.5 sm:w-2.5 rounded-full bg-[#ff6b5a]" />
                 <span className="h-2 w-2 sm:h-2.5 sm:w-2.5 rounded-full bg-[#f7c948]" />
@@ -58,7 +58,7 @@ export default function CaseMockup({
               </span>
             </div>
 
-            <div className="relative aspect-[4/3] sm:aspect-[16/8.9] overflow-hidden p-2 sm:p-3.5 md:p-4">
+            <div className="relative aspect-[4/3] sm:aspect-[16/8.9] overflow-hidden p-0 sm:p-3.5 md:p-4">
               <div
                 aria-hidden="true"
                 className="grid-fade absolute inset-0 opacity-18"
@@ -69,7 +69,7 @@ export default function CaseMockup({
               />
 
               <div className="relative grid h-full gap-3 md:grid-cols-[1.8fr_0.42fr]">
-                <div className="overflow-hidden rounded-[14px] sm:rounded-[18px] border border-white/8 bg-[linear-gradient(180deg,rgba(255,255,255,0.04),rgba(255,255,255,0.01))]">
+                <div className="overflow-hidden sm:rounded-[18px] border-0 sm:border border-white/8 bg-[linear-gradient(180deg,rgba(255,255,255,0.04),rgba(255,255,255,0.01))]">
                   {image ? (
                     <div className="relative h-full overflow-hidden">
                       <Image
@@ -78,13 +78,13 @@ export default function CaseMockup({
                         fill
                         loading="eager"
                         sizes="(max-width: 767px) 100vw, (max-width: 1279px) 74vw, 42vw"
-                        className="object-cover object-[center_top] sm:object-center brightness-[1.12] contrast-[1.05] saturate-[1.08] transition-transform duration-700 group-hover:scale-[1.018]"
+                        className="object-cover object-[center_top] sm:object-center brightness-[1.12] contrast-[1.08] saturate-[1.08] transition-transform duration-700 group-hover:scale-[1.018]"
                       />
-                      <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(10,10,10,0.02)_0%,rgba(10,10,10,0.08)_52%,rgba(10,10,10,0.58)_100%)]" />
+                      <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(10,10,10,0.01)_0%,rgba(10,10,10,0.04)_52%,rgba(10,10,10,0.65)_100%)]" />
                       <div className="hidden sm:inline-flex absolute left-3 top-3 rounded-full border border-primary/16 bg-black/32 px-3 py-1.5 text-[9px] font-semibold uppercase tracking-[0.18em] text-primary backdrop-blur">
                         Activo digital en producción
                       </div>
-                      <div className="absolute inset-x-2 sm:inset-x-3 bottom-2 sm:bottom-3 sm:max-w-[72%] rounded-[14px] sm:rounded-[16px] border border-white/10 bg-black/40 sm:bg-black/32 p-2.5 sm:p-3 backdrop-blur-md">
+                      <div className="hidden sm:block absolute inset-x-2 sm:inset-x-3 bottom-2 sm:bottom-3 sm:max-w-[72%] rounded-[14px] sm:rounded-[16px] border border-white/10 bg-black/40 sm:bg-black/32 p-2.5 sm:p-3 backdrop-blur-md">
                         <p className="text-[8.5px] sm:text-[9px] font-semibold uppercase tracking-[0.22em] text-outline">
                           Infraestructura comercial aplicada
                         </p>
