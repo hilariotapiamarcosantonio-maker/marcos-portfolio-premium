@@ -82,13 +82,13 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="panel-premium w-full justify-self-end rounded-[28px] border border-outline-variant/18 bg-surface-container-low/88 p-4 sm:p-5 backdrop-blur md:p-6 lg:max-w-[520px] xl:p-7">
+          <div className="panel-premium w-full justify-self-end rounded-[28px] border border-outline-variant/18 bg-surface-container-low/88 p-3.5 sm:p-5 backdrop-blur md:p-6 lg:max-w-[520px] xl:p-7">
             <div className="flex items-start justify-between gap-3 border-b border-outline-variant/12 pb-3 sm:pb-4">
               <div>
                 <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-primary">
                   Infraestructura conectada
                 </p>
-                <p className="mt-1.5 sm:mt-2 max-w-md text-[0.85rem] sm:text-sm leading-[1.4] sm:leading-6 text-secondary">
+                <p className="mt-1.5 sm:mt-2 max-w-md text-[0.85rem] sm:text-sm leading-[1.35] sm:leading-6 text-secondary">
                   Cada capa está diseñada para sostener autoridad, ordenar
                   oportunidades y volver más predecible la operación comercial.
                 </p>
@@ -98,11 +98,11 @@ export default function Hero() {
               </span>
             </div>
 
-            <div className="mt-4 sm:mt-5 space-y-2.5 sm:space-y-3.5">
+            <div className="mt-4 sm:mt-5 space-y-2 sm:space-y-3.5">
               {systemSteps.map((step, index) => (
                 <div
                   key={step.label}
-                  className="flex gap-3 border-b border-outline-variant/12 pb-2.5 sm:pb-3.5 transition-transform duration-500 last:border-b-0 last:pb-0 hover:translate-x-1"
+                  className="flex gap-3 border-b border-outline-variant/12 pb-2 sm:pb-3.5 transition-transform duration-500 last:border-b-0 last:pb-0 hover:translate-x-1"
                 >
                   <span className="font-headline text-[1.2rem] sm:text-[1.35rem] font-bold text-primary/70">
                     0{index + 1}
@@ -111,7 +111,7 @@ export default function Hero() {
                     <h2 className="text-[10.5px] sm:text-[11px] font-bold uppercase tracking-[0.22em] text-tertiary">
                       {step.label}
                     </h2>
-                    <p className="mt-1 sm:mt-1.5 text-[0.8rem] sm:text-[0.86rem] leading-[1.4] sm:leading-6 text-secondary">
+                    <p className="mt-1 sm:mt-1.5 text-[0.8rem] sm:text-[0.86rem] leading-[1.3] sm:leading-6 text-secondary">
                       {step.value}
                     </p>
                   </div>

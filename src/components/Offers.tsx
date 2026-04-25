@@ -5,7 +5,7 @@ export default function Offers() {
   return (
     <section
       id="offers"
-      className="relative scroll-mt-[4.5rem] md:scroll-mt-[5.5rem] border-t border-outline-variant/10 bg-surface-container-low py-24 md:py-28"
+      className="relative scroll-mt-20 md:scroll-mt-24 border-t border-outline-variant/10 bg-surface-container-low py-24 md:py-28"
     >
       <div
         aria-hidden="true"

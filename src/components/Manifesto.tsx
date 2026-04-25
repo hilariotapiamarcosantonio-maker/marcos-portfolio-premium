@@ -5,7 +5,7 @@ export default function Manifesto() {
   return (
     <section
       id="system"
-      className="relative scroll-mt-[4.5rem] md:scroll-mt-[5.5rem] py-20 md:py-24"
+      className="relative scroll-mt-20 md:scroll-mt-24 py-20 md:py-24"
     >
       <div className="content-shell">
         <SectionHeading
