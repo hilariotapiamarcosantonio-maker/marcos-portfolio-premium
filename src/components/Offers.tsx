@@ -5,7 +5,7 @@ export default function Offers() {
   return (
     <section
       id="offers"
-      className="relative scroll-mt-24 border-t border-outline-variant/10 bg-surface-container-low py-24 md:py-28"
+      className="relative scroll-mt-[4.5rem] md:scroll-mt-[5.5rem] border-t border-outline-variant/10 bg-surface-container-low py-24 md:py-28"
     >
       <div
         aria-hidden="true"
@@ -53,7 +53,7 @@ export default function Offers() {
                   ) : null}
                 </div>
 
-                <h3 className="mt-2.5 sm:mt-3 font-headline text-[1.4rem] sm:text-[1.55rem] font-bold leading-[1.05] sm:leading-[1.06] text-tertiary md:text-[1.78rem]">
+                <h3 className="mt-2.5 sm:mt-3 font-headline text-[1.3rem] sm:text-[1.55rem] font-bold leading-[1.05] sm:leading-[1.06] text-tertiary md:text-[1.78rem]">
                   {offer.name}
                 </h3>
                 <p className="mt-3 sm:mt-4 text-[0.9rem] sm:text-[0.96rem] leading-[1.4] sm:leading-6.5 text-secondary">

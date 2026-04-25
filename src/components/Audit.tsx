@@ -71,7 +71,7 @@ function OptionCard({
 }: OptionCardProps) {
   return (
     <label
-      className={`panel-premium relative flex cursor-pointer rounded-[18px] border px-4 py-4 transition-[transform,border-color,background-color,box-shadow] duration-300 hover:-translate-y-0.5 ${
+      className={`panel-premium relative flex cursor-pointer rounded-[18px] border px-3.5 py-3.5 sm:px-4 sm:py-4 transition-[transform,border-color,background-color,box-shadow] duration-300 hover:-translate-y-0.5 ${
         selected
           ? "border-primary/36 bg-primary/10 shadow-[0_16px_36px_rgba(0,0,0,0.18)]"
           : "border-outline-variant/16 bg-surface/88 hover:border-primary/22"
@@ -87,15 +87,15 @@ function OptionCard({
       />
       <span
         aria-hidden="true"
-        className={`absolute right-4 top-4 h-2.5 w-2.5 rounded-full transition-colors ${
+        className={`absolute right-3.5 top-3.5 sm:right-4 sm:top-4 h-2 w-2 sm:h-2.5 sm:w-2.5 rounded-full transition-colors ${
           selected ? "bg-primary" : "bg-outline-variant"
         }`}
       />
-      <span className="pr-6">
-        <span className="block text-sm font-semibold leading-6 text-tertiary">
+      <span className="pr-5 sm:pr-6">
+        <span className="block text-[0.85rem] sm:text-sm font-semibold leading-[1.3] sm:leading-6 text-tertiary">
           {title}
         </span>
-        <span className="mt-2 block text-xs leading-6 text-secondary">
+        <span className="mt-1.5 sm:mt-2 block text-[0.75rem] sm:text-xs leading-[1.35] sm:leading-6 text-secondary">
           {description}
         </span>
       </span>
@@ -162,7 +162,7 @@ export default function Audit() {
   return (
     <section
       id="audit"
-      className="relative scroll-mt-24 border-t border-outline-variant/10 bg-surface py-24 md:py-28"
+      className="relative scroll-mt-[4.5rem] md:scroll-mt-[5.5rem] border-t border-outline-variant/10 bg-surface py-24 md:py-28"
     >
       <div
         aria-hidden="true"
@@ -224,22 +224,22 @@ export default function Audit() {
 
           <form
             onSubmit={handleSubmit}
-            className="panel-premium relative overflow-hidden rounded-[32px] border border-primary/16 bg-surface-container-high p-7 md:p-8"
+            className="panel-premium relative overflow-hidden rounded-[26px] sm:rounded-[32px] border border-primary/16 bg-surface-container-high p-5 sm:p-7 md:p-8"
           >
             <div
               aria-hidden="true"
               className="section-divider absolute inset-x-8 top-0 h-px"
             />
 
-            <div className="mb-7">
-              <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-primary">
+            <div className="mb-6 sm:mb-7">
+              <p className="text-[9px] sm:text-[10px] font-semibold uppercase tracking-[0.28em] text-primary">
                 Aplicación estratégica
               </p>
-              <h3 className="mt-4 max-w-2xl font-headline text-[1.55rem] font-bold leading-[1.06] text-tertiary md:text-[2.05rem]">
+              <h3 className="mt-2.5 sm:mt-4 max-w-2xl font-headline text-[1.4rem] sm:text-[1.55rem] font-bold leading-[1.05] sm:leading-[1.06] text-tertiary md:text-[2.05rem]">
                 Cuéntame qué tipo de sistema necesitas y el rango de inversión
                 con el que estás pensando resolverlo.
               </h3>
-              <p className="mt-3 max-w-2xl text-sm leading-6.5 text-secondary">
+              <p className="mt-2 sm:mt-3 max-w-2xl text-[0.85rem] sm:text-sm leading-[1.4] sm:leading-6.5 text-secondary">
                 La idea es detectar encaje rápido y proteger el tiempo de ambos
                 lados antes de abrir una conversación.
               </p>
@@ -357,7 +357,7 @@ export default function Audit() {
               <button
                 type="submit"
                 disabled={submission.status === "sending"}
-                className={`bronze-glow inline-flex items-center justify-center rounded-full px-6 py-3.5 text-[11px] font-extrabold uppercase tracking-[0.22em] text-on-primary shadow-[0_18px_40px_rgba(224,194,159,0.18)] transition-transform ${
+                className={`bronze-glow inline-flex w-full sm:w-auto items-center justify-center rounded-full px-5 py-4 sm:px-6 sm:py-3.5 text-[10.5px] sm:text-[11px] font-extrabold uppercase tracking-[0.2em] sm:tracking-[0.22em] text-on-primary shadow-[0_18px_40px_rgba(224,194,159,0.18)] transition-transform ${
                   submission.status === "sending"
                     ? "cursor-wait opacity-70"
                     : "hover:-translate-y-0.5"

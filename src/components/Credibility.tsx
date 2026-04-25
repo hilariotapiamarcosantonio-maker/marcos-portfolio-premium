@@ -9,7 +9,7 @@ export default function Credibility() {
   return (
     <section
       id="credibility"
-      className="relative scroll-mt-24 border-y border-outline-variant/10 bg-surface-container-low/60 py-16 md:py-18 lg:py-16"
+      className="relative scroll-mt-[4.5rem] md:scroll-mt-[5.5rem] border-y border-outline-variant/10 bg-surface-container-low/60 py-16 md:py-18 lg:py-16"
     >
       <div
         aria-hidden="true"

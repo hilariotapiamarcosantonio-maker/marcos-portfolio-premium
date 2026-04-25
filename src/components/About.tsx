@@ -25,7 +25,7 @@ const executionPoints = [
 
 export default function About() {
   return (
-    <section id="about" className="scroll-mt-24 py-24 md:py-28">
+    <section id="about" className="scroll-mt-[4.5rem] md:scroll-mt-[5.5rem] py-24 md:py-28">
       <div className="content-shell">
         <div className="grid gap-5 sm:gap-8 lg:grid-cols-[0.95fr_1.05fr]">
           <div className="panel-premium rounded-[32px] border border-outline-variant/18 bg-surface-container-low/85 p-4 sm:p-5 md:p-8">
@@ -33,7 +33,7 @@ export default function About() {
               eyebrow="Dirección estratégica"
               title={
                 <>
-                  <span className="sm:hidden text-[1.4rem] leading-[1.05]">Marcos Hilario diseña el sistema que une autoridad y control.</span>
+                  <span className="sm:hidden text-[1.3rem] leading-[1.05]">Marcos Hilario diseña el sistema que une autoridad y control.</span>
                   <span className="hidden sm:inline">Marcos Hilario diseña el sistema que une autoridad digital con control comercial.</span>
                 </>
               }
@@ -60,9 +60,9 @@ export default function About() {
             {executionPoints.map((point, index) => (
               <article
                 key={point.title}
-                className="panel-premium rounded-[28px] border border-outline-variant/14 bg-surface-container-lowest/80 px-4 py-3.5 sm:p-5 transition-[transform,border-color] hover:-translate-y-1 hover:border-primary/30 md:p-6"
+                className="panel-premium rounded-[24px] sm:rounded-[28px] border border-outline-variant/14 bg-surface-container-lowest/80 px-4 py-4 sm:p-5 transition-[transform,border-color] hover:-translate-y-1 hover:border-primary/30 md:p-6"
               >
-                <p className="text-[9px] sm:text-[10px] font-semibold uppercase tracking-[0.26em] text-primary">
+                <p className="text-[9px] sm:text-[10px] font-semibold uppercase tracking-[0.2em] sm:tracking-[0.26em] text-primary">
                   <span className="sm:hidden">MÓDULO 0{index + 1}</span>
                   <span className="hidden sm:inline">Marcos Hilario</span>
                 </p>
