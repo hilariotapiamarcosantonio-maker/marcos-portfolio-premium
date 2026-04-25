@@ -92,10 +92,10 @@ function OptionCard({
         }`}
       />
       <span className="pr-5 sm:pr-6">
-        <span className="block text-[0.85rem] sm:text-sm font-semibold leading-[1.3] sm:leading-6 text-tertiary">
+        <span className="block text-[0.85rem] sm:text-sm font-semibold leading-[1.3] sm:leading-6 text-tertiary/90">
           {title}
         </span>
-        <span className="mt-1.5 sm:mt-2 block text-[0.75rem] sm:text-xs leading-[1.35] sm:leading-6 text-secondary">
+        <span className="mt-1.5 sm:mt-2 block text-[0.75rem] sm:text-xs leading-[1.35] sm:leading-6 text-secondary/75">
           {description}
         </span>
       </span>
@@ -172,15 +172,15 @@ export default function Audit() {
       <div className="content-shell">
         <div className="grid gap-6 lg:grid-cols-[0.86fr_1.14fr]">
           <div className="panel-premium rounded-[32px] border border-outline-variant/18 bg-surface-container-low p-7 md:p-8">
-            <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-primary">
+            <p className="text-[10px] font-semibold uppercase tracking-[0.25em] text-primary/80">
               Evaluación estratégica
             </p>
-            <h2 className="mt-5 max-w-2xl font-headline text-[clamp(2rem,3.2vw,2.95rem)] font-bold leading-[1.03] tracking-[-0.03em] text-tertiary">
+            <h2 className="mt-5 max-w-2xl font-headline text-[clamp(2rem,3.2vw,2.95rem)] font-bold leading-[1.03] tracking-[-0.03em] text-tertiary/95">
               No es un formulario de contacto. Es el filtro inicial para
               determinar si tu negocio necesita una infraestructura comercial
               más seria.
             </h2>
-            <p className="mt-5 max-w-2xl text-[0.98rem] leading-7 text-secondary">
+            <p className="mt-5 max-w-2xl text-[0.98rem] leading-7 text-secondary/75">
               Revisamos necesidad, urgencia, rango de inversión y nivel de
               complejidad para decidir si vale la pena abrir una conversación
               estratégica.
@@ -191,12 +191,28 @@ export default function Audit() {
                 (item) => (
                   <span
                     key={item}
-                    className="rounded-full border border-primary/16 bg-primary/8 px-3.5 py-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-primary"
+                    className="rounded-full border border-primary/10 bg-primary/5 px-3.5 py-1.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-primary/80"
                   >
                     {item}
                   </span>
                 ),
               )}
+            </div>
+
+            <div className="mt-8 space-y-3">
+              {auditDeliverables.map((item, index) => (
+                <div
+                  key={item}
+                  className="rounded-[20px] border border-primary/12 bg-primary/5 px-4 py-3.5"
+                >
+                  <div className="flex gap-3.5">
+                    <span className="font-headline text-lg font-bold text-primary/70">
+                      0{index + 1}
+                    </span>
+                    <p className="text-sm leading-6.5 text-secondary/75">{item}</p>
+                  </div>
+                </div>
+              ))}
             </div>
 
             <div className="mt-8 space-y-3">
@@ -232,14 +248,14 @@ export default function Audit() {
             />
 
             <div className="mb-6 sm:mb-7">
-              <p className="text-[9px] sm:text-[10px] font-semibold uppercase tracking-[0.28em] text-primary">
+              <p className="text-[9px] sm:text-[10px] font-semibold uppercase tracking-[0.25em] text-primary/80">
                 Aplicación estratégica
               </p>
-              <h3 className="mt-2.5 sm:mt-4 max-w-2xl font-headline text-[1.4rem] sm:text-[1.55rem] font-bold leading-[1.05] sm:leading-[1.06] text-tertiary md:text-[2.05rem]">
+              <h3 className="mt-2.5 sm:mt-4 max-w-2xl font-headline text-[1.4rem] sm:text-[1.55rem] font-bold leading-[1.05] sm:leading-[1.06] text-tertiary/95 md:text-[2.05rem]">
                 Cuéntame qué tipo de sistema necesitas y el rango de inversión
                 con el que estás pensando resolverlo.
               </h3>
-              <p className="mt-2 sm:mt-3 max-w-2xl text-[0.85rem] sm:text-sm leading-[1.4] sm:leading-6.5 text-secondary">
+              <p className="mt-2 sm:mt-3 max-w-2xl text-[0.85rem] sm:text-sm leading-[1.4] sm:leading-6.5 text-secondary/75">
                 La idea es detectar encaje rápido y proteger el tiempo de ambos
                 lados antes de abrir una conversación.
               </p>

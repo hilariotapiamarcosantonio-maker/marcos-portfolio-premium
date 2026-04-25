@@ -46,8 +46,8 @@ export default function About() {
               compact
             />
 
-            <div className="mt-4 sm:mt-6 rounded-[22px] border border-primary/15 bg-primary/6 p-3.5 sm:p-5">
-              <p className="text-[0.85rem] sm:text-sm leading-[1.35] sm:leading-6.5 text-secondary md:text-[0.98rem]">
+            <div className="mt-4 sm:mt-6 rounded-[22px] border border-primary/10 bg-primary/5 p-3.5 sm:p-5">
+              <p className="text-[0.85rem] sm:text-sm leading-[1.35] sm:leading-6.5 text-secondary/80 md:text-[0.98rem]">
                 Cuando un negocio depende de mensajes sueltos, formularios sin
                 destino, seguimiento manual y una web sin consecuencias, pierde
                 velocidad, claridad y autoridad. La arquitectura correcta
@@ -62,14 +62,14 @@ export default function About() {
                 key={point.title}
                 className="panel-premium rounded-[24px] sm:rounded-[28px] border border-outline-variant/14 bg-surface-container-lowest/80 px-4 py-4 sm:p-5 transition-[transform,border-color] hover:-translate-y-1 hover:border-primary/30 md:p-6"
               >
-                <p className="text-[9px] sm:text-[10px] font-semibold uppercase tracking-[0.2em] sm:tracking-[0.26em] text-primary">
+                <p className="text-[9px] sm:text-[10px] font-semibold uppercase tracking-[0.2em] sm:tracking-[0.25em] text-primary/80">
                   <span className="sm:hidden">MÓDULO 0{index + 1}</span>
                   <span className="hidden sm:inline">Marcos Hilario</span>
                 </p>
-                <h3 className="mt-2 sm:mt-3 font-headline text-[1.25rem] sm:text-[1.45rem] font-bold leading-[1.05] sm:leading-[1.08] text-tertiary md:text-[1.6rem]">
+                <h3 className="mt-2 sm:mt-3 font-headline text-[1.25rem] sm:text-[1.45rem] font-bold leading-[1.05] sm:leading-[1.08] text-tertiary/95 md:text-[1.6rem]">
                   {point.title}
                 </h3>
-                <p className="mt-1.5 sm:mt-3 text-[0.85rem] sm:text-sm leading-[1.3] sm:leading-6.5 text-secondary">
+                <p className="mt-1.5 sm:mt-3 text-[0.85rem] sm:text-sm leading-[1.3] sm:leading-6.5 text-secondary/75">
                   {point.description}
                 </p>
               </article>

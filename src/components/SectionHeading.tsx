@@ -34,18 +34,18 @@ export default function SectionHeading({
     <div
       className={`max-w-[58rem] ${centered ? "mx-auto text-center" : ""} ${className}`}
     >
-      <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-primary">
+      <p className="text-[10px] font-semibold uppercase tracking-[0.25em] text-primary/80">
         {eyebrow}
       </p>
       <h2
-        className={`mt-4 font-headline font-bold text-tertiary ${titleSize} ${
+        className={`mt-4 font-headline font-bold text-tertiary/95 ${titleSize} ${
           titleWidth
         }`}
       >
         {title}
       </h2>
       <p
-        className={`max-w-3xl text-secondary ${descriptionSize} ${
+        className={`max-w-3xl text-secondary/75 ${descriptionSize} ${
           centered ? "mx-auto" : ""
         }`}
       >

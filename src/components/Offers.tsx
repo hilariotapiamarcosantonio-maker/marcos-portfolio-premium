@@ -43,20 +43,20 @@ export default function Offers() {
 
               <div className="relative flex h-full flex-col">
                 <div className="flex items-center justify-between gap-4">
-                  <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-primary">
+                  <p className="text-[10px] font-semibold uppercase tracking-[0.25em] text-primary/80">
                     {offer.label}
                   </p>
                   {offer.featured ? (
-                    <span className="rounded-full border border-primary/16 bg-primary/8 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-primary">
+                    <span className="rounded-full border border-primary/10 bg-primary/5 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-primary/80">
                       Recomendado
                     </span>
                   ) : null}
                 </div>
 
-                <h3 className="mt-2.5 sm:mt-3 font-headline text-[1.3rem] sm:text-[1.55rem] font-bold leading-[1.05] sm:leading-[1.06] text-tertiary md:text-[1.78rem]">
+                <h3 className="mt-2.5 sm:mt-3 font-headline text-[1.3rem] sm:text-[1.55rem] font-bold leading-[1.05] sm:leading-[1.06] text-tertiary/95 md:text-[1.78rem]">
                   {offer.name}
                 </h3>
-                <p className="mt-3 sm:mt-4 text-[0.9rem] sm:text-[0.96rem] leading-[1.4] sm:leading-6.5 text-secondary">
+                <p className="mt-3 sm:mt-4 text-[0.9rem] sm:text-[0.96rem] leading-[1.4] sm:leading-6.5 text-secondary/75">
                   {offer.summary}
                 </p>
 
@@ -65,7 +65,7 @@ export default function Offers() {
                     <p className="text-[9px] sm:text-[10px] font-semibold uppercase tracking-[0.22em] text-outline">
                       Para quién es
                     </p>
-                    <p className="mt-1.5 sm:mt-2 text-[0.85rem] sm:text-sm leading-[1.35] sm:leading-6.5 text-tertiary/85">
+                    <p className="mt-1.5 sm:mt-2 text-[0.85rem] sm:text-sm leading-[1.35] sm:leading-6.5 text-tertiary/80">
                       {offer.audience}
                     </p>
                   </div>
@@ -74,7 +74,7 @@ export default function Offers() {
                     <p className="text-[9px] sm:text-[10px] font-semibold uppercase tracking-[0.22em] text-outline">
                       Qué incluye
                     </p>
-                    <ul className="mt-2.5 sm:mt-3 space-y-2 sm:space-y-2.5 text-[0.85rem] sm:text-sm leading-[1.3] sm:leading-6.5 text-secondary">
+                    <ul className="mt-2.5 sm:mt-3 space-y-2 sm:space-y-2.5 text-[0.85rem] sm:text-sm leading-[1.3] sm:leading-6.5 text-secondary/80">
                       {offer.includes.map((item) => (
                         <li key={item} className="flex gap-2.5 sm:gap-3">
                           <span className="mt-1.5 sm:mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
@@ -88,7 +88,7 @@ export default function Offers() {
                     <p className="text-[9px] sm:text-[10px] font-semibold uppercase tracking-[0.22em] text-outline">
                       Resultado que busca
                     </p>
-                    <p className="mt-1.5 sm:mt-2 text-[0.85rem] sm:text-sm leading-[1.35] sm:leading-6.5 text-tertiary/85">
+                    <p className="mt-1.5 sm:mt-2 text-[0.85rem] sm:text-sm leading-[1.35] sm:leading-6.5 text-tertiary/80">
                       {offer.result}
                     </p>
                   </div>

@@ -39,7 +39,7 @@ export default function Credibility() {
           {credibilitySignals.map((signal, index) => (
             <span
               key={signal}
-              className={`rounded-full border border-primary/16 bg-primary/8 px-3 sm:px-3.5 py-1.5 text-[9.5px] sm:text-[10px] font-semibold uppercase tracking-[0.2em] sm:tracking-[0.22em] text-primary ${
+              className={`rounded-full border border-primary/10 bg-primary/5 px-3 sm:px-3.5 py-1.5 text-[9.5px] sm:text-[10px] font-semibold uppercase tracking-[0.2em] sm:tracking-[0.22em] text-primary/80 ${
                 index === 2 ? "hidden sm:inline-flex" : ""
               }`}
             >
@@ -59,18 +59,18 @@ export default function Credibility() {
                 className="absolute inset-x-6 top-0 h-px bg-gradient-to-r from-primary/0 via-primary/55 to-primary/0"
               />
 
-              <p className="text-[9px] sm:text-[10px] font-semibold uppercase tracking-[0.28em] text-primary">
+              <p className="text-[9px] sm:text-[10px] font-semibold uppercase tracking-[0.25em] text-primary/80">
                 Base de confianza
               </p>
-              <h3 className="mt-2.5 sm:mt-3 font-headline text-[1.25rem] sm:text-[1.42rem] font-bold leading-[1.1] sm:leading-[1.08] text-tertiary md:text-[1.52rem]">
+              <h3 className="mt-2.5 sm:mt-3 font-headline text-[1.25rem] sm:text-[1.42rem] font-bold leading-[1.1] sm:leading-[1.08] text-tertiary/95 md:text-[1.52rem]">
                 {pillar.title}
               </h3>
-              <p className="mt-1.5 sm:mt-3 text-[0.85rem] sm:text-sm leading-[1.4] sm:leading-6.5 text-secondary">
+              <p className="mt-1.5 sm:mt-3 text-[0.85rem] sm:text-sm leading-[1.4] sm:leading-6.5 text-secondary/75">
                 {pillar.description}
               </p>
 
               <div className="mt-2.5 sm:mt-4 border-t border-outline-variant/12 pt-2.5 sm:pt-4">
-                <ul className="space-y-1.5 sm:space-y-2.5 text-[0.85rem] sm:text-[0.92rem] leading-[1.25] sm:leading-6 text-tertiary/88">
+                <ul className="space-y-1.5 sm:space-y-2.5 text-[0.85rem] sm:text-[0.92rem] leading-[1.25] sm:leading-6 text-tertiary/75">
                   {pillar.items.map((item) => (
                     <li key={item} className="flex gap-2.5 sm:gap-3">
                       <span className="mt-1.5 sm:mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
@@ -84,7 +84,7 @@ export default function Credibility() {
         </div>
 
         <div className="panel-premium mt-7 flex flex-col items-center gap-4 rounded-[26px] border border-primary/14 bg-[linear-gradient(180deg,rgba(224,194,159,0.08),rgba(224,194,159,0.04))] px-5 py-6 text-center md:px-8">
-          <p className="max-w-3xl text-sm leading-6.5 text-secondary md:text-[0.98rem]">
+          <p className="max-w-3xl text-sm leading-6.5 text-secondary/80 md:text-[0.98rem]">
             La intención no es parecer una agencia más grande. La intención es
             proyectar una práctica seria de arquitectura digital para negocios
             que necesitan presencia premium, seguimiento comercial y control de

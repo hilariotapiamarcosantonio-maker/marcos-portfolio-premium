@@ -46,10 +46,10 @@ export default function Cases() {
 
               <div className="mt-4 sm:mt-5 flex flex-col gap-2 sm:gap-3 border-b border-outline-variant/12 pb-4 sm:pb-5 md:flex-row md:items-end md:justify-between">
                 <div>
-                  <p className="text-[9px] sm:text-[10px] font-semibold uppercase tracking-[0.28em] text-primary">
+                  <p className="text-[9px] sm:text-[10px] font-semibold uppercase tracking-[0.25em] text-primary/80">
                     {study.sector}
                   </p>
-                  <h3 className="mt-1.5 sm:mt-2 font-headline text-[1.3rem] sm:text-[1.45rem] font-bold leading-[1.1] sm:leading-[1.07] text-tertiary md:text-[1.72rem]">
+                  <h3 className="mt-1.5 sm:mt-2 font-headline text-[1.3rem] sm:text-[1.45rem] font-bold leading-[1.1] sm:leading-[1.07] text-tertiary/95 md:text-[1.72rem]">
                     {study.name}
                   </h3>
                 </div>
@@ -65,7 +65,7 @@ export default function Cases() {
                   <p className="text-[8.5px] sm:text-[10px] font-semibold uppercase tracking-[0.18em] sm:tracking-[0.22em] text-outline">
                     Problema
                   </p>
-                  <p className="mt-1.5 sm:mt-2 text-[0.8rem] sm:text-sm leading-[1.25] sm:leading-6.5 text-secondary md:text-[0.98rem]">
+                  <p className="mt-1.5 sm:mt-2 text-[0.8rem] sm:text-sm leading-[1.25] sm:leading-6.5 text-secondary/75 md:text-[0.98rem]">
                     {study.problem}
                   </p>
                 </div>
@@ -74,7 +74,7 @@ export default function Cases() {
                   <p className="text-[8.5px] sm:text-[10px] font-semibold uppercase tracking-[0.18em] sm:tracking-[0.22em] text-outline">
                     Sistema construido
                   </p>
-                  <p className="mt-1.5 sm:mt-2 text-[0.8rem] sm:text-sm leading-[1.25] sm:leading-6.5 text-secondary md:text-[0.98rem]">
+                  <p className="mt-1.5 sm:mt-2 text-[0.8rem] sm:text-sm leading-[1.25] sm:leading-6.5 text-secondary/75 md:text-[0.98rem]">
                     {study.systemBuilt}
                   </p>
                 </div>
@@ -83,7 +83,7 @@ export default function Cases() {
                   <p className="text-[8.5px] sm:text-[10px] font-semibold uppercase tracking-[0.18em] sm:tracking-[0.22em] text-outline">
                     Valor comercial
                   </p>
-                  <p className="mt-1.5 sm:mt-2 text-[0.8rem] sm:text-sm leading-[1.25] sm:leading-6.5 text-tertiary/88 md:text-[0.98rem]">
+                  <p className="mt-1.5 sm:mt-2 text-[0.8rem] sm:text-sm leading-[1.25] sm:leading-6.5 text-tertiary/80 md:text-[0.98rem]">
                     {study.commercialValue}
                   </p>
                 </div>

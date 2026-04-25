@@ -37,7 +37,7 @@ export default function Hero() {
         <div className="grid gap-6 sm:gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(390px,520px)] lg:items-start lg:gap-9 xl:gap-11">
           <div className="min-w-0 max-w-[48rem]">
             <div className="flex justify-center sm:justify-start">
-              <span className="inline-flex max-w-[95vw] text-center justify-center rounded-full border border-primary/20 bg-primary/8 px-3.5 sm:px-4 py-1.5 text-[9px] font-semibold uppercase tracking-[0.18em] sm:tracking-[0.28em] text-primary sm:text-[10px]">
+              <span className="inline-flex max-w-[95vw] text-center justify-center rounded-full border border-primary/10 bg-primary/5 px-3.5 sm:px-4 py-1.5 text-[9px] font-semibold uppercase tracking-[0.18em] sm:tracking-[0.25em] text-primary/80 sm:text-[10px]">
                 Arquitectura digital premium
               </span>
             </div>
@@ -49,7 +49,7 @@ export default function Hero() {
               </span>
             </h1>
 
-            <p className="mt-4 max-w-[calc(100vw-1.5rem)] text-[0.95rem] leading-[1.6] text-secondary sm:max-w-[44rem] sm:text-[0.98rem] sm:leading-7 md:text-[1.04rem]">
+            <p className="mt-4 max-w-[calc(100vw-1.5rem)] text-[0.95rem] leading-[1.6] text-secondary/80 sm:max-w-[44rem] sm:text-[0.98rem] sm:leading-7 md:text-[1.04rem]">
               Diseño ecosistemas comerciales con web premium, CRM,
               automatización, dashboards y seguimiento para negocios que
               necesitan captar, organizar y convertir mejor sus oportunidades.
@@ -85,15 +85,15 @@ export default function Hero() {
           <div className="panel-premium w-full justify-self-end rounded-[28px] border border-outline-variant/18 bg-surface-container-low/88 p-3.5 sm:p-5 backdrop-blur md:p-6 lg:max-w-[520px] xl:p-7">
             <div className="flex items-start justify-between gap-3 border-b border-outline-variant/12 pb-3 sm:pb-4">
               <div>
-                <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-primary">
+                <p className="text-[10px] font-semibold uppercase tracking-[0.25em] text-primary/80">
                   Infraestructura conectada
                 </p>
-                <p className="mt-1.5 sm:mt-2 max-w-md text-[0.85rem] sm:text-sm leading-[1.35] sm:leading-6 text-secondary">
+                <p className="mt-1.5 sm:mt-2 max-w-md text-[0.85rem] sm:text-sm leading-[1.35] sm:leading-6 text-secondary/75">
                   Cada capa está diseñada para sostener autoridad, ordenar
                   oportunidades y volver más predecible la operación comercial.
                 </p>
               </div>
-              <span className="hidden rounded-full border border-primary/16 bg-primary/8 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.22em] text-primary xl:inline-flex">
+              <span className="hidden rounded-full border border-primary/10 bg-primary/5 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.22em] text-primary/80 xl:inline-flex">
                 Sistema premium
               </span>
             </div>
@@ -108,10 +108,10 @@ export default function Hero() {
                     0{index + 1}
                   </span>
                   <div>
-                    <h2 className="text-[10.5px] sm:text-[11px] font-bold uppercase tracking-[0.22em] text-tertiary">
+                    <h2 className="text-[10.5px] sm:text-[11px] font-bold uppercase tracking-[0.22em] text-tertiary/90">
                       {step.label}
                     </h2>
-                    <p className="mt-1 sm:mt-1.5 text-[0.8rem] sm:text-[0.86rem] leading-[1.3] sm:leading-6 text-secondary">
+                    <p className="mt-1 sm:mt-1.5 text-[0.8rem] sm:text-[0.86rem] leading-[1.3] sm:leading-6 text-secondary/75">
                       {step.value}
                     </p>
                   </div>
@@ -120,7 +120,7 @@ export default function Hero() {
             </div>
 
             <div className="mt-4 sm:mt-5 hidden sm:block rounded-[20px] border border-primary/14 bg-primary/6 p-3.5">
-              <p className="text-[0.86rem] leading-6 text-secondary">
+              <p className="text-[0.86rem] leading-6 text-secondary/75">
                 El objetivo no es parecer premium. El objetivo es que la
                 presencia digital sostenga confianza, ordene el pipeline y
                 permita operar con criterio ejecutivo.

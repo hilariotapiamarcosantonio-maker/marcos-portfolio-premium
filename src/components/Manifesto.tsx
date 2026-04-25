@@ -23,20 +23,20 @@ export default function Manifesto() {
               key={module.title}
               className="panel-premium rounded-[26px] border border-outline-variant/12 bg-surface px-5 py-5 transition-all hover:-translate-y-1 hover:border-primary/28 md:px-5 md:py-6 xl:px-6"
             >
-              <p className="text-[10px] font-semibold uppercase tracking-[0.26em] text-primary">
+              <p className="text-[10px] font-semibold uppercase tracking-[0.25em] text-primary/80">
                 Módulo
               </p>
-              <h3 className="mt-3 font-headline text-[1.34rem] font-bold leading-[1.08] text-tertiary md:text-[1.48rem]">
+              <h3 className="mt-3 font-headline text-[1.34rem] font-bold leading-[1.08] text-tertiary/95 md:text-[1.48rem]">
                 {module.title}
               </h3>
-              <p className="mt-3 text-sm leading-6 text-secondary">
+              <p className="mt-3 text-sm leading-6 text-secondary/75">
                 {module.description}
               </p>
               <div className="mt-4 border-t border-outline-variant/12 pt-4">
                 <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-outline">
                   Impacto buscado
                 </p>
-                <p className="mt-2 text-sm leading-6 text-tertiary/85">
+                <p className="mt-2 text-sm leading-6 text-tertiary/75">
                   {module.outcome}
                 </p>
               </div>
