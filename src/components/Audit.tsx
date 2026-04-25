@@ -3,7 +3,6 @@
 import type { ChangeEvent, FormEvent } from "react";
 import { useState } from "react";
 import {
-  auditDeliverables,
   budgetRanges,
   needTypes,
 } from "@/content/site";
@@ -173,15 +172,11 @@ export default function Audit() {
             <p className="text-[10px] font-semibold uppercase tracking-[0.25em] text-primary/80">
               Evaluación estratégica
             </p>
-            <h2 className="mt-5 max-w-2xl font-headline text-[clamp(2rem,3.2vw,2.95rem)] font-bold leading-[1.03] tracking-[-0.03em] text-tertiary/95">
-              No es un formulario de contacto. Es el filtro inicial para
-              determinar si tu negocio necesita una infraestructura comercial
-              más seria.
+            <h2 className="mt-5 max-w-2xl font-headline text-[clamp(1.75rem,2.8vw,2.5rem)] font-bold leading-[1.08] tracking-[-0.02em] text-tertiary/95">
+              No todo negocio necesita una página nueva. Algunos necesitan una estructura mejor.
             </h2>
-            <p className="mt-5 max-w-2xl text-[0.98rem] leading-7 text-secondary/75">
-              Revisamos necesidad, urgencia, rango de inversión y nivel de
-              complejidad para decidir si vale la pena abrir una conversación
-              estratégica.
+            <p className="mt-5 max-w-2xl text-[1rem] leading-7 text-secondary/80">
+              Esta evaluación permite entender si tu proyecto requiere presencia premium, captación ordenada, CRM, automatización o un sistema comercial más completo.
             </p>
 
             <div className="mt-7 flex flex-wrap gap-2.5">
@@ -198,16 +193,36 @@ export default function Audit() {
             </div>
 
             <div className="mt-8 space-y-3">
-              {auditDeliverables.map((item, index) => (
+              {[
+                {
+                  title: "Diagnóstico",
+                  description: "Lectura inicial de presencia digital, captación y claridad comercial.",
+                },
+                {
+                  title: "Prioridad",
+                  description: "Identificación del punto donde la operación pierde oportunidades o seguimiento.",
+                },
+                {
+                  title: "Siguiente paso",
+                  description: "Si hay encaje, avanzamos hacia una conversación con contexto, alcance y dirección.",
+                },
+              ].map((item, index) => (
                 <div
-                  key={item}
-                  className="rounded-[20px] border border-primary/12 bg-primary/5 px-4 py-3.5"
+                  key={item.title}
+                  className="rounded-[20px] border border-primary/12 bg-primary/5 px-4 py-4"
                 >
-                  <div className="flex gap-3.5">
-                    <span className="font-headline text-lg font-bold text-primary/70">
+                  <div className="flex gap-4">
+                    <span className="font-headline text-[1.1rem] font-bold text-primary/70 mt-0.5">
                       0{index + 1}
                     </span>
-                    <p className="text-sm leading-6.5 text-secondary/75">{item}</p>
+                    <div>
+                      <h4 className="text-[10.5px] font-bold uppercase tracking-[0.2em] text-tertiary/90">
+                        {item.title}
+                      </h4>
+                      <p className="mt-1.5 text-[0.85rem] sm:text-[0.9rem] leading-[1.4] text-secondary/75">
+                        {item.description}
+                      </p>
+                    </div>
                   </div>
                 </div>
               ))}
