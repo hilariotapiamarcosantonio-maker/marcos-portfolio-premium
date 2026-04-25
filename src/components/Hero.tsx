@@ -34,11 +34,13 @@ export default function Hero() {
       />
 
       <div className="content-shell relative z-10">
-        <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(390px,520px)] lg:items-start lg:gap-9 xl:gap-11">
+        <div className="grid gap-6 sm:gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(390px,520px)] lg:items-start lg:gap-9 xl:gap-11">
           <div className="min-w-0 max-w-[48rem]">
-            <span className="inline-flex rounded-full border border-primary/20 bg-primary/8 px-4 py-1.5 text-[10px] font-semibold uppercase tracking-[0.28em] text-primary">
-              Arquitectura digital premium
-            </span>
+            <div className="flex justify-center sm:block">
+              <span className="inline-flex rounded-full border border-primary/20 bg-primary/8 px-4 py-1.5 text-[10px] font-semibold uppercase tracking-[0.28em] text-primary">
+                Arquitectura digital premium
+              </span>
+            </div>
 
             <h1 className="mt-4 max-w-[calc(100vw-1.5rem)] break-words font-headline text-[clamp(1.65rem,6.8vw,2.2rem)] font-extrabold leading-[1.08] tracking-normal text-tertiary sm:text-[clamp(2rem,7.2vw,2.55rem)] sm:leading-[1.04] sm:max-w-[23ch] lg:max-w-[800px] lg:text-[clamp(2.85rem,3.35vw,3.4rem)]">
               <span className="block">No construyo páginas web.</span>
@@ -68,11 +70,11 @@ export default function Hero() {
               </a>
             </div>
 
-            <div className="mt-5 flex flex-wrap gap-2.5">
+            <div className="mt-5 flex flex-wrap gap-2 sm:gap-2.5">
               {heroHighlights.map((highlight) => (
                 <span
                   key={highlight}
-                  className="rounded-full border border-outline-variant/28 bg-surface-container-low/70 px-3.5 py-1.5 text-[11px] font-medium text-secondary transition-[transform,border-color,color] duration-300 hover:-translate-y-0.5 hover:border-primary/24 hover:text-tertiary"
+                  className="rounded-full border border-outline-variant/28 bg-surface-container-low/70 px-3 py-1.5 sm:px-3.5 sm:py-1.5 text-[10.5px] sm:text-[11px] font-medium text-secondary transition-[transform,border-color,color] duration-300 hover:-translate-y-0.5 hover:border-primary/24 hover:text-tertiary"
                 >
                   {highlight}
                 </span>
@@ -80,13 +82,13 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="panel-premium w-full justify-self-end rounded-[28px] border border-outline-variant/18 bg-surface-container-low/88 p-5 backdrop-blur md:p-6 lg:max-w-[520px] xl:p-7">
-            <div className="flex items-start justify-between gap-3 border-b border-outline-variant/12 pb-4">
+          <div className="panel-premium w-full justify-self-end rounded-[28px] border border-outline-variant/18 bg-surface-container-low/88 p-4 sm:p-5 backdrop-blur md:p-6 lg:max-w-[520px] xl:p-7">
+            <div className="flex items-start justify-between gap-3 border-b border-outline-variant/12 pb-3 sm:pb-4">
               <div>
                 <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-primary">
                   Infraestructura conectada
                 </p>
-                <p className="mt-2 max-w-md text-sm leading-6 text-secondary">
+                <p className="mt-1.5 sm:mt-2 max-w-md text-[0.85rem] sm:text-sm leading-[1.4] sm:leading-6 text-secondary">
                   Cada capa está diseñada para sostener autoridad, ordenar
                   oportunidades y volver más predecible la operación comercial.
                 </p>
@@ -96,20 +98,20 @@ export default function Hero() {
               </span>
             </div>
 
-            <div className="mt-5 space-y-3.5">
+            <div className="mt-4 sm:mt-5 space-y-2.5 sm:space-y-3.5">
               {systemSteps.map((step, index) => (
                 <div
                   key={step.label}
-                  className="flex gap-3 border-b border-outline-variant/12 pb-3.5 transition-transform duration-500 last:border-b-0 last:pb-0 hover:translate-x-1"
+                  className="flex gap-3 border-b border-outline-variant/12 pb-2.5 sm:pb-3.5 transition-transform duration-500 last:border-b-0 last:pb-0 hover:translate-x-1"
                 >
-                  <span className="font-headline text-[1.35rem] font-bold text-primary/70">
+                  <span className="font-headline text-[1.2rem] sm:text-[1.35rem] font-bold text-primary/70">
                     0{index + 1}
                   </span>
                   <div>
-                    <h2 className="text-[11px] font-bold uppercase tracking-[0.22em] text-tertiary">
+                    <h2 className="text-[10.5px] sm:text-[11px] font-bold uppercase tracking-[0.22em] text-tertiary">
                       {step.label}
                     </h2>
-                    <p className="mt-1.5 text-[0.86rem] leading-6 text-secondary">
+                    <p className="mt-1 sm:mt-1.5 text-[0.8rem] sm:text-[0.86rem] leading-[1.4] sm:leading-6 text-secondary">
                       {step.value}
                     </p>
                   </div>
@@ -117,7 +119,7 @@ export default function Hero() {
               ))}
             </div>
 
-            <div className="mt-5 rounded-[20px] border border-primary/14 bg-primary/6 p-3.5">
+            <div className="mt-4 sm:mt-5 hidden sm:block rounded-[20px] border border-primary/14 bg-primary/6 p-3.5">
               <p className="text-[0.86rem] leading-6 text-secondary">
                 El objetivo no es parecer premium. El objetivo es que la
                 presencia digital sostenga confianza, ordene el pipeline y
