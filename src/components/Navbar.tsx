@@ -25,14 +25,14 @@ export default function Navbar() {
       }`}
     >
       <div
-        className={`content-shell flex items-center justify-between transition-[padding] duration-300 ${
+        className={`content-shell flex items-center justify-between gap-4 transition-[padding] duration-300 ${
           scrolled ? "py-3 md:py-3" : "py-4 md:py-[1.1rem]"
         }`}
         style={{ overflow: "hidden" }}
       >
         <a
           href="#top"
-          className="shrink-0 whitespace-nowrap font-headline text-[10px] font-extrabold uppercase tracking-[0.22em] text-tertiary transition-colors hover:text-primary sm:tracking-[0.28em] md:text-sm md:tracking-[0.32em]"
+          className="shrink-0 whitespace-nowrap font-headline text-[10.5px] font-extrabold uppercase tracking-[0.24em] text-tertiary transition-colors hover:text-primary sm:tracking-[0.28em] md:text-sm md:tracking-[0.32em] translate-y-[1px]"
         >
           <span className="sm:hidden">M. Hilario</span>
           <span className="hidden sm:inline">Marcos Hilario</span>
@@ -52,10 +52,10 @@ export default function Navbar() {
 
         <a
           href="#audit"
-          className={`bronze-glow shrink-0 rounded-full font-bold uppercase text-on-primary shadow-[0_12px_40px_rgba(224,194,159,0.16)] transition-[transform,padding,letter-spacing,font-size] duration-300 hover:-translate-y-0.5 ${
+          className={`bronze-glow shrink-0 rounded-full font-bold uppercase text-on-primary shadow-[0_12px_40px_rgba(224,194,159,0.16)] transition-[transform,padding,letter-spacing,font-size] duration-300 hover:-translate-y-0.5 flex items-center justify-center ${
             scrolled
-              ? "px-3 py-2.5 text-[8.5px] tracking-[0.16em] sm:px-3.5 md:px-4 md:text-[9.5px] md:tracking-[0.2em]"
-              : "px-3.5 py-3 text-[9px] tracking-[0.18em] sm:px-4 md:px-5 md:text-[10px] md:tracking-[0.24em]"
+              ? "px-4 py-2.5 text-[9px] tracking-[0.18em] sm:px-3.5 md:px-4 md:text-[9.5px] md:tracking-[0.2em]"
+              : "px-4.5 py-3 text-[9.5px] tracking-[0.2em] sm:px-4 md:px-5 md:text-[10px] md:tracking-[0.24em]"
           }`}
         >
           <span className="sm:hidden">Auditoría</span>

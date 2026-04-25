@@ -36,7 +36,7 @@ export default function Hero() {
       <div className="content-shell relative z-10">
         <div className="grid gap-6 sm:gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(390px,520px)] lg:items-start lg:gap-9 xl:gap-11">
           <div className="min-w-0 max-w-[48rem]">
-            <div className="flex justify-center sm:block">
+            <div className="flex sm:block justify-start sm:justify-start">
               <span className="inline-flex rounded-full border border-primary/20 bg-primary/8 px-4 py-1.5 text-[10px] font-semibold uppercase tracking-[0.28em] text-primary">
                 Arquitectura digital premium
               </span>
@@ -70,7 +70,7 @@ export default function Hero() {
               </a>
             </div>
 
-            <div className="mt-5 flex flex-wrap gap-2 sm:gap-2.5">
+            <div className="mt-5 flex flex-wrap gap-2 sm:gap-2.5 justify-start">
               {heroHighlights.map((highlight) => (
                 <span
                   key={highlight}

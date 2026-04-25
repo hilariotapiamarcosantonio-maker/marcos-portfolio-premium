@@ -42,15 +42,15 @@ export default function CaseMockup({
           />
 
           <div className="relative overflow-hidden rounded-[18px] sm:rounded-[22px] border border-white/8 bg-[#0c0c0c]">
-            <div className="hidden sm:flex items-center gap-3 border-b border-white/8 bg-white/[0.03] px-4 py-2.5">
-              <div className="flex items-center gap-2">
-                <span className="h-2.5 w-2.5 rounded-full bg-[#ff6b5a]" />
-                <span className="h-2.5 w-2.5 rounded-full bg-[#f7c948]" />
-                <span className="h-2.5 w-2.5 rounded-full bg-[#2cc36b]" />
+            <div className="flex items-center gap-2 sm:gap-3 border-b border-white/8 bg-white/[0.03] px-3 sm:px-4 py-2 sm:py-2.5">
+              <div className="flex items-center gap-1.5 sm:gap-2">
+                <span className="h-2 w-2 sm:h-2.5 sm:w-2.5 rounded-full bg-[#ff6b5a]" />
+                <span className="h-2 w-2 sm:h-2.5 sm:w-2.5 rounded-full bg-[#f7c948]" />
+                <span className="h-2 w-2 sm:h-2.5 sm:w-2.5 rounded-full bg-[#2cc36b]" />
               </div>
 
-              <div className="flex-1 rounded-full border border-white/8 bg-black/20 px-4 py-1.5 text-[9px] font-medium uppercase tracking-[0.2em] text-outline">
-                MarcosHilario.System / {label}
+              <div className="flex-1 max-w-[140px] sm:max-w-none rounded-full border border-white/8 bg-black/20 px-3 sm:px-4 py-1 sm:py-1.5 text-[7.5px] sm:text-[9px] font-medium uppercase tracking-[0.2em] text-outline truncate text-center sm:text-left mx-auto sm:mx-0">
+                M.System / {label}
               </div>
 
               <span className="hidden rounded-full border border-primary/14 bg-primary/8 px-2.5 py-1 text-[9px] font-semibold uppercase tracking-[0.18em] text-primary lg:inline-flex">
@@ -58,7 +58,7 @@ export default function CaseMockup({
               </span>
             </div>
 
-            <div className="relative aspect-square sm:aspect-[16/8.9] overflow-hidden p-2 sm:p-3.5 md:p-4">
+            <div className="relative aspect-[4/3] sm:aspect-[16/8.9] overflow-hidden p-2 sm:p-3.5 md:p-4">
               <div
                 aria-hidden="true"
                 className="grid-fade absolute inset-0 opacity-18"
