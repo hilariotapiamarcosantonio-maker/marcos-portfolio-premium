@@ -29,18 +29,15 @@ export default function ArchitectProfile() {
           {/* Right Column: Text */}
           <div className="w-full md:w-[58%] lg:w-[62%]">
             <p className="text-[10px] font-semibold uppercase tracking-[0.25em] text-primary/80">
-              Dirección Estratégica
+              Perfil del Arquitecto
             </p>
             <h2 className="mt-4 font-headline text-[clamp(2rem,3vw,2.5rem)] font-bold leading-[1.05] tracking-tight text-tertiary/95">
-              El arquitecto detrás del sistema
+              Dirección estratégica para unir autoridad digital con control comercial.
             </h2>
 
             <div className="mt-6 flex flex-col gap-5 text-[1rem] leading-7 text-secondary/75 md:mt-8 md:text-[1.05rem] md:leading-8">
               <p>
-                <strong className="font-semibold text-tertiary/90">Marcos Hilario</strong> diseña ecosistemas digitales para negocios que necesitan más que presencia online.
-              </p>
-              <p>
-                Su enfoque une web premium, captación, CRM, automatización y dashboards para convertir proyectos dispersos en infraestructura comercial clara.
+                <strong className="font-semibold text-tertiary/90">Marcos Hilario</strong> diseña ecosistemas digitales para negocios que necesitan convertir presencia, captación y seguimiento en una operación más clara.
               </p>
               <p className="border-l border-primary/25 pl-5 text-[1.1rem] font-medium leading-relaxed text-tertiary/80 italic md:text-[1.15rem]">
                 &ldquo;No entra a decorar una marca. Entra a ordenar cómo un negocio capta, responde, da seguimiento y convierte oportunidades.&rdquo;

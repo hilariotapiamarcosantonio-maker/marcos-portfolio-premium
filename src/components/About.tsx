@@ -2,21 +2,25 @@ import SectionHeading from "@/components/SectionHeading";
 
 const executionPoints = [
   {
+    label: "CAPTACIÓN",
     title: "Capta con intención",
     description:
       "La web deja de ser vitrina y se convierte en una entrada seria para prospectos con contexto, necesidad y prioridad.",
   },
   {
+    label: "SEGUIMIENTO",
     title: "Ordena la conversación comercial",
     description:
       "CRM, calificación, etapas y seguimiento para no depender de memoria, chats dispersos o urgencias mal gestionadas.",
   },
   {
+    label: "AUTOMATIZACIÓN",
     title: "Automatiza sin perder criterio",
     description:
       "Recordatorios, asignaciones, formularios, respuestas y tareas conectadas para ahorrar tiempo sin deshumanizar la venta.",
   },
   {
+    label: "CONTROL",
     title: "Controla desde un dashboard",
     description:
       "Visibilidad sobre oportunidades, cuellos de botella y ritmo comercial para dirigir la operación con autoridad.",
@@ -30,11 +34,11 @@ export default function About() {
         <div className="grid gap-5 sm:gap-8 lg:grid-cols-[0.95fr_1.05fr]">
           <div className="panel-premium rounded-[32px] border border-outline-variant/18 bg-surface-container-low/85 p-4 sm:p-5 md:p-8">
             <SectionHeading
-              eyebrow="Dirección estratégica"
+              eyebrow="Arquitectura Digital"
               title={
                 <>
-                  <span className="sm:hidden text-[1.3rem] leading-[1.05]">Marcos Hilario diseña el sistema que une autoridad y control.</span>
-                  <span className="hidden sm:inline">Marcos Hilario diseña el sistema que une autoridad digital con control comercial.</span>
+                  <span className="sm:hidden text-[1.3rem] leading-[1.05]">El ecosistema que une autoridad y control.</span>
+                  <span className="hidden sm:inline">El ecosistema que une autoridad digital con control comercial.</span>
                 </>
               }
               description={
@@ -57,14 +61,13 @@ export default function About() {
           </div>
 
           <div className="grid gap-3 sm:gap-4 sm:grid-cols-2">
-            {executionPoints.map((point, index) => (
+            {executionPoints.map((point) => (
               <article
                 key={point.title}
                 className="panel-premium rounded-[24px] sm:rounded-[28px] border border-outline-variant/14 bg-surface-container-lowest/80 px-4 py-4 sm:p-5 transition-[transform,border-color] hover:-translate-y-1 hover:border-primary/30 md:p-6"
               >
                 <p className="text-[9px] sm:text-[10px] font-semibold uppercase tracking-[0.2em] sm:tracking-[0.25em] text-primary/80">
-                  <span className="sm:hidden">MÓDULO 0{index + 1}</span>
-                  <span className="hidden sm:inline">Marcos Hilario</span>
+                  {point.label}
                 </p>
                 <h3 className="mt-2 sm:mt-3 font-headline text-[1.25rem] sm:text-[1.45rem] font-bold leading-[1.05] sm:leading-[1.08] text-tertiary/95 md:text-[1.6rem]">
                   {point.title}
