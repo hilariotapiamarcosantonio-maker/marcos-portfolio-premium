@@ -60,30 +60,30 @@ export default function Cases() {
                 </span>
               </div>
 
-              <div className="mt-4 sm:mt-5 grid gap-2 sm:gap-3.5">
-                <div className="rounded-[18px] sm:rounded-[22px] border border-outline-variant/12 bg-black/10 px-3 py-2.5 sm:p-4">
+              <div className="mt-4 sm:mt-5 grid gap-2 sm:gap-2.5">
+                <div className="rounded-[18px] sm:rounded-[22px] border border-outline-variant/12 bg-black/10 px-3 py-2.5 sm:px-4 sm:py-3 md:py-3">
                   <p className="text-[8.5px] sm:text-[10px] font-semibold uppercase tracking-[0.18em] sm:tracking-[0.22em] text-outline">
                     Problema
                   </p>
-                  <p className="mt-1.5 sm:mt-2 text-[0.8rem] sm:text-sm leading-[1.25] sm:leading-6.5 text-secondary/75 md:text-[0.98rem]">
+                  <p className="mt-1.5 sm:mt-2 text-[0.8rem] sm:text-sm leading-[1.25] sm:leading-6.5 text-secondary/75 md:text-[0.95rem]">
                     {study.problem}
                   </p>
                 </div>
 
-                <div className="rounded-[18px] sm:rounded-[22px] border border-outline-variant/12 bg-black/10 px-3 py-2.5 sm:p-4">
+                <div className="rounded-[18px] sm:rounded-[22px] border border-outline-variant/12 bg-black/10 px-3 py-2.5 sm:px-4 sm:py-3 md:py-3">
                   <p className="text-[8.5px] sm:text-[10px] font-semibold uppercase tracking-[0.18em] sm:tracking-[0.22em] text-outline">
                     Sistema construido
                   </p>
-                  <p className="mt-1.5 sm:mt-2 text-[0.8rem] sm:text-sm leading-[1.25] sm:leading-6.5 text-secondary/75 md:text-[0.98rem]">
+                  <p className="mt-1.5 sm:mt-2 text-[0.8rem] sm:text-sm leading-[1.25] sm:leading-6.5 text-secondary/75 md:text-[0.95rem]">
                     {study.systemBuilt}
                   </p>
                 </div>
 
-                <div className="rounded-[18px] sm:rounded-[22px] border border-primary/14 bg-primary/6 px-3 py-2.5 sm:p-4">
+                <div className="rounded-[18px] sm:rounded-[22px] border border-primary/14 bg-primary/6 px-3 py-2.5 sm:px-4 sm:py-3 md:py-3">
                   <p className="text-[8.5px] sm:text-[10px] font-semibold uppercase tracking-[0.18em] sm:tracking-[0.22em] text-outline">
                     Valor comercial
                   </p>
-                  <p className="mt-1.5 sm:mt-2 text-[0.8rem] sm:text-sm leading-[1.25] sm:leading-6.5 text-tertiary/80 md:text-[0.98rem]">
+                  <p className="mt-1.5 sm:mt-2 text-[0.8rem] sm:text-sm leading-[1.25] sm:leading-6.5 text-tertiary/80 md:text-[0.95rem]">
                     {study.commercialValue}
                   </p>
                 </div>
